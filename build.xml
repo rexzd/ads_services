@@ -67,4 +67,15 @@
       <fileset dir="." includes="**/*.tmp"/>
     </delete>
   </target>
+
+  <target name="run-rest" depends="compile">
+    <java classname="se.umu.cs.ads.a1.server.REST.RESTServer" fork="true" failonerror="true">
+      <classpath>
+        <pathelement path="${build}"/>
+        <fileset dir="${lib}" includes="**/*.jar"/>
+      </classpath>
+      <arg value="8000"/>
+    </java>
+  </target>
+
 </project>

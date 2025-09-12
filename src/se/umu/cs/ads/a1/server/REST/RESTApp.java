@@ -6,6 +6,7 @@ import org.restlet.routing.Router;
 
 import se.umu.cs.ads.a1.server.REST.resources.TopicResource;
 import se.umu.cs.ads.a1.server.REST.resources.SubscriptionsResource;
+import se.umu.cs.ads.a1.server.REST.resources.MessageBatchResource;
 import se.umu.cs.ads.a1.server.REST.resources.MessageCollectionResource;
 import se.umu.cs.ads.a1.server.REST.resources.MessageResource;
 
@@ -17,6 +18,7 @@ public class RESTApp extends Application {
         router.attach("/subscriptions", SubscriptionsResource.class);
         router.attach("/messages", MessageCollectionResource.class);
         router.attach("/messages/{id}", MessageResource.class);
+        router.attach("/messages/batch", MessageBatchResource.class);
         return router;
     }
 }

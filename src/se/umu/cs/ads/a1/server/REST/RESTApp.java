@@ -16,9 +16,9 @@ public class RESTApp extends Application {
         Router router = new Router(getContext());
         router.attach("/users/{username}/topics", TopicResource.class);
         router.attach("/subscriptions", SubscriptionsResource.class);
+        router.attach("/messages/batch", MessageBatchResource.class);
         router.attach("/messages", MessageCollectionResource.class);
         router.attach("/messages/{id}", MessageResource.class);
-        router.attach("/messages/batch", MessageBatchResource.class);
         return router;
     }
 }

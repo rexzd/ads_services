@@ -78,4 +78,30 @@
     </java>
   </target>
 
+    <target name="run-rest-logic" depends="compile">
+        <java classname="se.umu.cs.ads.a1.Main" fork="true" failonerror="true">
+            <classpath>
+                <pathelement path="build"/>
+                <fileset dir="lib">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+            <arg value="se.umu.cs.ads.a1.clients.RESTMessenger"/>
+            <arg value="-logic"/>
+        </java>
+    </target>
+
+    <target name="run-rest-perf" depends="compile">
+        <java classname="se.umu.cs.ads.a1.Main" fork="true" failonerror="true">
+            <classpath>
+                <pathelement path="build"/>
+                <fileset dir="lib">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+            <arg value="se.umu.cs.ads.a1.clients.RESTMessenger"/>
+            <arg value="-perf"/>
+        </java>
+    </target>
+
 </project>

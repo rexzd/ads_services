@@ -7,6 +7,7 @@ import org.restlet.resource.Post;
 import org.restlet.resource.ServerResource;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import se.umu.cs.ads.a1.interfaces.Messenger;
 import se.umu.cs.ads.a1.server.REST.BackendLocator;
@@ -17,6 +18,7 @@ import se.umu.cs.ads.a1.types.Topic;
 
 public class SubscriptionsResource extends ServerResource {
     private static final Messenger messenger = BackendLocator.getMessenger();
+    private final ObjectMapper mapper = ObjectMapperFactory.get();
 
     @Post("json")
     public StringRepresentation subscribe(Representation entity) throws Exception {
@@ -25,8 +27,8 @@ public class SubscriptionsResource extends ServerResource {
         Username username = new Username(node.get("username").asText());
         Topic topic = new Topic(node.get("topic").asText());
         Topic[] topics = messenger.subscribe(username, topic);
-        String json = ObjectMapperFactory.get().writeValueAsString(topics);
-        return new StringRepresentation(json);
+        String json = mapper.writeValueAsString(topics);
+        return new StringRepresentation(json, org.restlet.data.MediaType.APPLICATION_JSON);
     }
 
     @Delete("json")
@@ -36,7 +38,7 @@ public class SubscriptionsResource extends ServerResource {
         Username username = new Username(node.get("username").asText());
         Topic topic = new Topic(node.get("topic").asText());
         Topic[] topics = messenger.unsubscribe(username, topic);
-        String json = ObjectMapperFactory.get().writeValueAsString(topics);
-        return new StringRepresentation(json);
+        String json = mapper.writeValueAsString(topics);
+        return new StringRepresentation(json, org.restlet.data.MediaType.APPLICATION_JSON);
     }
 }

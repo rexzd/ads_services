@@ -37,7 +37,6 @@ public class MessageBatchResource extends ServerResource{
             Data data = new Data(node.get("data").asText().getBytes());
             messages[i] = Message.construct(username, topic, content, data);
         }
-
         messenger.store(messages);
         String json = mapper.writeValueAsString(messages);
         return new StringRepresentation(json, MediaType.APPLICATION_JSON);
@@ -60,9 +59,14 @@ public class MessageBatchResource extends ServerResource{
     public void deleteMessage(Representation entity) throws Exception{
         String body = entity.getText();
         JsonNode node = mapper.readTree(body);
-        MessageId[] messageIds = new MessageId[node.get("ids").size()];
-        for (int i = 0; i < messageIds.length; i++) {
-            messageIds[i] = new MessageId(node.get("ids").get(i).asText());
+        MessageId[] messageIds;
+        if (node.isArray()) {
+            messageIds = new MessageId[node.size()];
+            for (int i = 0; i < node.size(); i++) {
+                messageIds[i] = new MessageId(node.get(i).asText());
+            }
+        } else {
+            messageIds = new MessageId[0];
         }
         messenger.delete(messageIds);
     }

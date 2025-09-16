@@ -152,4 +152,38 @@
         </java>
     </target>
 
+    <target name="run-proto" depends="compile">
+        <java classname="se.umu.cs.ads.a1.server.protobuffers.ProtoServer" fork="true" failonerror="true">
+            <classpath>
+                <pathelement path="${build}"/>
+                <fileset dir="${lib}" includes="**/*.jar"/>
+            </classpath>
+            <arg value="10000"/>
+        </java>
+    </target>
+
+    <target name="run-proto-logic" depends="compile">
+        <java classname="se.umu.cs.ads.a1.Main" fork="true" failonerror="true">
+            <classpath>
+                <pathelement path="${build}"/>
+                <fileset dir="${lib}" includes="**/*.jar"/>
+            </classpath>
+            <arg value="se.umu.cs.ads.a1.clients.ProtoMessenger"/>
+            <arg value="-logic"/>
+        </java>
+    </target>
+
+    <target name="run-proto-perf" depends="compile">
+        <java classname="se.umu.cs.ads.a1.Main" fork="true" failonerror="true">
+            <classpath>
+                <pathelement path="${build}"/>
+                <fileset dir="${lib}" includes="**/*.jar"/>
+            </classpath>
+            <jvmarg value="-Xmx2g"/>
+            <arg value="se.umu.cs.ads.a1.clients.ProtoMessenger"/>
+            <arg value="-perf"/>
+        </java>
+    </target>
+
+
 </project>

@@ -74,3 +74,29 @@ service MessengerService {
     rpc ListUserMessages (Username) returns (MessageIdList);
     rpc ListTopicMessages (Topic) returns (MessageIdList);
 }
+
+message Request {
+  oneof payload {
+    StoreRequest store = 1;
+    RetrieveRequest retrieve = 2;
+    DeleteRequest delete = 3;
+    SubscriptionRequest subscribe = 4;
+    SubscriptionRequest unsubscribe = 5;
+    Username listUserTopics = 6;
+    Topic listSubscribers = 7;
+    Username listUserMessages = 8;
+    Topic listTopicMessages = 9;
+    google.protobuf.Empty listUsers = 10;
+    google.protobuf.Empty listTopics = 11;
+  }
+}
+
+message Response {
+  oneof payload {
+    google.protobuf.Empty empty = 1;
+    RetrieveResponse retrieveResp = 2;
+    TopicList topicList = 3;
+    UsernameList usernameList = 4;
+    MessageIdList messageIdList = 5;
+  }
+}

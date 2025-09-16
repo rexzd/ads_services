@@ -9030,6 +9030,4444 @@ public final class MessengerProto {
 
   }
 
+  public interface RequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:messenger.Request)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.messenger.StoreRequest store = 1;</code>
+     */
+    boolean hasStore();
+    /**
+     * <code>.messenger.StoreRequest store = 1;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest getStore();
+    /**
+     * <code>.messenger.StoreRequest store = 1;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequestOrBuilder getStoreOrBuilder();
+
+    /**
+     * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+     */
+    boolean hasRetrieve();
+    /**
+     * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest getRetrieve();
+    /**
+     * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequestOrBuilder getRetrieveOrBuilder();
+
+    /**
+     * <code>.messenger.DeleteRequest delete = 3;</code>
+     */
+    boolean hasDelete();
+    /**
+     * <code>.messenger.DeleteRequest delete = 3;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest getDelete();
+    /**
+     * <code>.messenger.DeleteRequest delete = 3;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequestOrBuilder getDeleteOrBuilder();
+
+    /**
+     * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+     */
+    boolean hasSubscribe();
+    /**
+     * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest getSubscribe();
+    /**
+     * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder getSubscribeOrBuilder();
+
+    /**
+     * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+     */
+    boolean hasUnsubscribe();
+    /**
+     * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest getUnsubscribe();
+    /**
+     * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder getUnsubscribeOrBuilder();
+
+    /**
+     * <code>.messenger.Username listUserTopics = 6;</code>
+     */
+    boolean hasListUserTopics();
+    /**
+     * <code>.messenger.Username listUserTopics = 6;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.Username getListUserTopics();
+    /**
+     * <code>.messenger.Username listUserTopics = 6;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder getListUserTopicsOrBuilder();
+
+    /**
+     * <code>.messenger.Topic listSubscribers = 7;</code>
+     */
+    boolean hasListSubscribers();
+    /**
+     * <code>.messenger.Topic listSubscribers = 7;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.Topic getListSubscribers();
+    /**
+     * <code>.messenger.Topic listSubscribers = 7;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder getListSubscribersOrBuilder();
+
+    /**
+     * <code>.messenger.Username listUserMessages = 8;</code>
+     */
+    boolean hasListUserMessages();
+    /**
+     * <code>.messenger.Username listUserMessages = 8;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.Username getListUserMessages();
+    /**
+     * <code>.messenger.Username listUserMessages = 8;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder getListUserMessagesOrBuilder();
+
+    /**
+     * <code>.messenger.Topic listTopicMessages = 9;</code>
+     */
+    boolean hasListTopicMessages();
+    /**
+     * <code>.messenger.Topic listTopicMessages = 9;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.Topic getListTopicMessages();
+    /**
+     * <code>.messenger.Topic listTopicMessages = 9;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder getListTopicMessagesOrBuilder();
+
+    /**
+     * <code>.google.protobuf.Empty listUsers = 10;</code>
+     */
+    boolean hasListUsers();
+    /**
+     * <code>.google.protobuf.Empty listUsers = 10;</code>
+     */
+    com.google.protobuf.Empty getListUsers();
+    /**
+     * <code>.google.protobuf.Empty listUsers = 10;</code>
+     */
+    com.google.protobuf.EmptyOrBuilder getListUsersOrBuilder();
+
+    /**
+     * <code>.google.protobuf.Empty listTopics = 11;</code>
+     */
+    boolean hasListTopics();
+    /**
+     * <code>.google.protobuf.Empty listTopics = 11;</code>
+     */
+    com.google.protobuf.Empty getListTopics();
+    /**
+     * <code>.google.protobuf.Empty listTopics = 11;</code>
+     */
+    com.google.protobuf.EmptyOrBuilder getListTopicsOrBuilder();
+
+    public se.umu.cs.ads.a1.grpc.MessengerProto.Request.PayloadCase getPayloadCase();
+  }
+  /**
+   * Protobuf type {@code messenger.Request}
+   */
+  public  static final class Request extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:messenger.Request)
+      RequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Request.newBuilder() to construct.
+    private Request(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Request() {
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Request(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.Builder subBuilder = null;
+              if (payloadCase_ == 1) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 1;
+              break;
+            }
+            case 18: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.Builder subBuilder = null;
+              if (payloadCase_ == 2) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 2;
+              break;
+            }
+            case 26: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.Builder subBuilder = null;
+              if (payloadCase_ == 3) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 3;
+              break;
+            }
+            case 34: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder subBuilder = null;
+              if (payloadCase_ == 4) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 4;
+              break;
+            }
+            case 42: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder subBuilder = null;
+              if (payloadCase_ == 5) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 5;
+              break;
+            }
+            case 50: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder subBuilder = null;
+              if (payloadCase_ == 6) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.Username.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 6;
+              break;
+            }
+            case 58: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder subBuilder = null;
+              if (payloadCase_ == 7) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.Topic.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 7;
+              break;
+            }
+            case 66: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder subBuilder = null;
+              if (payloadCase_ == 8) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.Username.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 8;
+              break;
+            }
+            case 74: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder subBuilder = null;
+              if (payloadCase_ == 9) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.Topic.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 9;
+              break;
+            }
+            case 82: {
+              com.google.protobuf.Empty.Builder subBuilder = null;
+              if (payloadCase_ == 10) {
+                subBuilder = ((com.google.protobuf.Empty) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(com.google.protobuf.Empty.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((com.google.protobuf.Empty) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 10;
+              break;
+            }
+            case 90: {
+              com.google.protobuf.Empty.Builder subBuilder = null;
+              if (payloadCase_ == 11) {
+                subBuilder = ((com.google.protobuf.Empty) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(com.google.protobuf.Empty.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((com.google.protobuf.Empty) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 11;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return se.umu.cs.ads.a1.grpc.MessengerProto.internal_static_messenger_Request_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return se.umu.cs.ads.a1.grpc.MessengerProto.internal_static_messenger_Request_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              se.umu.cs.ads.a1.grpc.MessengerProto.Request.class, se.umu.cs.ads.a1.grpc.MessengerProto.Request.Builder.class);
+    }
+
+    private int payloadCase_ = 0;
+    private java.lang.Object payload_;
+    public enum PayloadCase
+        implements com.google.protobuf.Internal.EnumLite {
+      STORE(1),
+      RETRIEVE(2),
+      DELETE(3),
+      SUBSCRIBE(4),
+      UNSUBSCRIBE(5),
+      LISTUSERTOPICS(6),
+      LISTSUBSCRIBERS(7),
+      LISTUSERMESSAGES(8),
+      LISTTOPICMESSAGES(9),
+      LISTUSERS(10),
+      LISTTOPICS(11),
+      PAYLOAD_NOT_SET(0);
+      private final int value;
+      private PayloadCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static PayloadCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static PayloadCase forNumber(int value) {
+        switch (value) {
+          case 1: return STORE;
+          case 2: return RETRIEVE;
+          case 3: return DELETE;
+          case 4: return SUBSCRIBE;
+          case 5: return UNSUBSCRIBE;
+          case 6: return LISTUSERTOPICS;
+          case 7: return LISTSUBSCRIBERS;
+          case 8: return LISTUSERMESSAGES;
+          case 9: return LISTTOPICMESSAGES;
+          case 10: return LISTUSERS;
+          case 11: return LISTTOPICS;
+          case 0: return PAYLOAD_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public PayloadCase
+    getPayloadCase() {
+      return PayloadCase.forNumber(
+          payloadCase_);
+    }
+
+    public static final int STORE_FIELD_NUMBER = 1;
+    /**
+     * <code>.messenger.StoreRequest store = 1;</code>
+     */
+    public boolean hasStore() {
+      return payloadCase_ == 1;
+    }
+    /**
+     * <code>.messenger.StoreRequest store = 1;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest getStore() {
+      if (payloadCase_ == 1) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.StoreRequest store = 1;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequestOrBuilder getStoreOrBuilder() {
+      if (payloadCase_ == 1) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.getDefaultInstance();
+    }
+
+    public static final int RETRIEVE_FIELD_NUMBER = 2;
+    /**
+     * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+     */
+    public boolean hasRetrieve() {
+      return payloadCase_ == 2;
+    }
+    /**
+     * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest getRetrieve() {
+      if (payloadCase_ == 2) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequestOrBuilder getRetrieveOrBuilder() {
+      if (payloadCase_ == 2) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.getDefaultInstance();
+    }
+
+    public static final int DELETE_FIELD_NUMBER = 3;
+    /**
+     * <code>.messenger.DeleteRequest delete = 3;</code>
+     */
+    public boolean hasDelete() {
+      return payloadCase_ == 3;
+    }
+    /**
+     * <code>.messenger.DeleteRequest delete = 3;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest getDelete() {
+      if (payloadCase_ == 3) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.DeleteRequest delete = 3;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequestOrBuilder getDeleteOrBuilder() {
+      if (payloadCase_ == 3) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.getDefaultInstance();
+    }
+
+    public static final int SUBSCRIBE_FIELD_NUMBER = 4;
+    /**
+     * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+     */
+    public boolean hasSubscribe() {
+      return payloadCase_ == 4;
+    }
+    /**
+     * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest getSubscribe() {
+      if (payloadCase_ == 4) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder getSubscribeOrBuilder() {
+      if (payloadCase_ == 4) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+    }
+
+    public static final int UNSUBSCRIBE_FIELD_NUMBER = 5;
+    /**
+     * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+     */
+    public boolean hasUnsubscribe() {
+      return payloadCase_ == 5;
+    }
+    /**
+     * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest getUnsubscribe() {
+      if (payloadCase_ == 5) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder getUnsubscribeOrBuilder() {
+      if (payloadCase_ == 5) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+    }
+
+    public static final int LISTUSERTOPICS_FIELD_NUMBER = 6;
+    /**
+     * <code>.messenger.Username listUserTopics = 6;</code>
+     */
+    public boolean hasListUserTopics() {
+      return payloadCase_ == 6;
+    }
+    /**
+     * <code>.messenger.Username listUserTopics = 6;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.Username getListUserTopics() {
+      if (payloadCase_ == 6) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.Username listUserTopics = 6;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder getListUserTopicsOrBuilder() {
+      if (payloadCase_ == 6) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+    }
+
+    public static final int LISTSUBSCRIBERS_FIELD_NUMBER = 7;
+    /**
+     * <code>.messenger.Topic listSubscribers = 7;</code>
+     */
+    public boolean hasListSubscribers() {
+      return payloadCase_ == 7;
+    }
+    /**
+     * <code>.messenger.Topic listSubscribers = 7;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.Topic getListSubscribers() {
+      if (payloadCase_ == 7) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.Topic listSubscribers = 7;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder getListSubscribersOrBuilder() {
+      if (payloadCase_ == 7) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+    }
+
+    public static final int LISTUSERMESSAGES_FIELD_NUMBER = 8;
+    /**
+     * <code>.messenger.Username listUserMessages = 8;</code>
+     */
+    public boolean hasListUserMessages() {
+      return payloadCase_ == 8;
+    }
+    /**
+     * <code>.messenger.Username listUserMessages = 8;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.Username getListUserMessages() {
+      if (payloadCase_ == 8) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.Username listUserMessages = 8;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder getListUserMessagesOrBuilder() {
+      if (payloadCase_ == 8) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+    }
+
+    public static final int LISTTOPICMESSAGES_FIELD_NUMBER = 9;
+    /**
+     * <code>.messenger.Topic listTopicMessages = 9;</code>
+     */
+    public boolean hasListTopicMessages() {
+      return payloadCase_ == 9;
+    }
+    /**
+     * <code>.messenger.Topic listTopicMessages = 9;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.Topic getListTopicMessages() {
+      if (payloadCase_ == 9) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.Topic listTopicMessages = 9;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder getListTopicMessagesOrBuilder() {
+      if (payloadCase_ == 9) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+    }
+
+    public static final int LISTUSERS_FIELD_NUMBER = 10;
+    /**
+     * <code>.google.protobuf.Empty listUsers = 10;</code>
+     */
+    public boolean hasListUsers() {
+      return payloadCase_ == 10;
+    }
+    /**
+     * <code>.google.protobuf.Empty listUsers = 10;</code>
+     */
+    public com.google.protobuf.Empty getListUsers() {
+      if (payloadCase_ == 10) {
+         return (com.google.protobuf.Empty) payload_;
+      }
+      return com.google.protobuf.Empty.getDefaultInstance();
+    }
+    /**
+     * <code>.google.protobuf.Empty listUsers = 10;</code>
+     */
+    public com.google.protobuf.EmptyOrBuilder getListUsersOrBuilder() {
+      if (payloadCase_ == 10) {
+         return (com.google.protobuf.Empty) payload_;
+      }
+      return com.google.protobuf.Empty.getDefaultInstance();
+    }
+
+    public static final int LISTTOPICS_FIELD_NUMBER = 11;
+    /**
+     * <code>.google.protobuf.Empty listTopics = 11;</code>
+     */
+    public boolean hasListTopics() {
+      return payloadCase_ == 11;
+    }
+    /**
+     * <code>.google.protobuf.Empty listTopics = 11;</code>
+     */
+    public com.google.protobuf.Empty getListTopics() {
+      if (payloadCase_ == 11) {
+         return (com.google.protobuf.Empty) payload_;
+      }
+      return com.google.protobuf.Empty.getDefaultInstance();
+    }
+    /**
+     * <code>.google.protobuf.Empty listTopics = 11;</code>
+     */
+    public com.google.protobuf.EmptyOrBuilder getListTopicsOrBuilder() {
+      if (payloadCase_ == 11) {
+         return (com.google.protobuf.Empty) payload_;
+      }
+      return com.google.protobuf.Empty.getDefaultInstance();
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (payloadCase_ == 1) {
+        output.writeMessage(1, (se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest) payload_);
+      }
+      if (payloadCase_ == 2) {
+        output.writeMessage(2, (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest) payload_);
+      }
+      if (payloadCase_ == 3) {
+        output.writeMessage(3, (se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest) payload_);
+      }
+      if (payloadCase_ == 4) {
+        output.writeMessage(4, (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_);
+      }
+      if (payloadCase_ == 5) {
+        output.writeMessage(5, (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_);
+      }
+      if (payloadCase_ == 6) {
+        output.writeMessage(6, (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_);
+      }
+      if (payloadCase_ == 7) {
+        output.writeMessage(7, (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_);
+      }
+      if (payloadCase_ == 8) {
+        output.writeMessage(8, (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_);
+      }
+      if (payloadCase_ == 9) {
+        output.writeMessage(9, (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_);
+      }
+      if (payloadCase_ == 10) {
+        output.writeMessage(10, (com.google.protobuf.Empty) payload_);
+      }
+      if (payloadCase_ == 11) {
+        output.writeMessage(11, (com.google.protobuf.Empty) payload_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (payloadCase_ == 1) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, (se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest) payload_);
+      }
+      if (payloadCase_ == 2) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest) payload_);
+      }
+      if (payloadCase_ == 3) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, (se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest) payload_);
+      }
+      if (payloadCase_ == 4) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_);
+      }
+      if (payloadCase_ == 5) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_);
+      }
+      if (payloadCase_ == 6) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_);
+      }
+      if (payloadCase_ == 7) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_);
+      }
+      if (payloadCase_ == 8) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_);
+      }
+      if (payloadCase_ == 9) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_);
+      }
+      if (payloadCase_ == 10) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, (com.google.protobuf.Empty) payload_);
+      }
+      if (payloadCase_ == 11) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, (com.google.protobuf.Empty) payload_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof se.umu.cs.ads.a1.grpc.MessengerProto.Request)) {
+        return super.equals(obj);
+      }
+      se.umu.cs.ads.a1.grpc.MessengerProto.Request other = (se.umu.cs.ads.a1.grpc.MessengerProto.Request) obj;
+
+      boolean result = true;
+      result = result && getPayloadCase().equals(
+          other.getPayloadCase());
+      if (!result) return false;
+      switch (payloadCase_) {
+        case 1:
+          result = result && getStore()
+              .equals(other.getStore());
+          break;
+        case 2:
+          result = result && getRetrieve()
+              .equals(other.getRetrieve());
+          break;
+        case 3:
+          result = result && getDelete()
+              .equals(other.getDelete());
+          break;
+        case 4:
+          result = result && getSubscribe()
+              .equals(other.getSubscribe());
+          break;
+        case 5:
+          result = result && getUnsubscribe()
+              .equals(other.getUnsubscribe());
+          break;
+        case 6:
+          result = result && getListUserTopics()
+              .equals(other.getListUserTopics());
+          break;
+        case 7:
+          result = result && getListSubscribers()
+              .equals(other.getListSubscribers());
+          break;
+        case 8:
+          result = result && getListUserMessages()
+              .equals(other.getListUserMessages());
+          break;
+        case 9:
+          result = result && getListTopicMessages()
+              .equals(other.getListTopicMessages());
+          break;
+        case 10:
+          result = result && getListUsers()
+              .equals(other.getListUsers());
+          break;
+        case 11:
+          result = result && getListTopics()
+              .equals(other.getListTopics());
+          break;
+        case 0:
+        default:
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (payloadCase_) {
+        case 1:
+          hash = (37 * hash) + STORE_FIELD_NUMBER;
+          hash = (53 * hash) + getStore().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + RETRIEVE_FIELD_NUMBER;
+          hash = (53 * hash) + getRetrieve().hashCode();
+          break;
+        case 3:
+          hash = (37 * hash) + DELETE_FIELD_NUMBER;
+          hash = (53 * hash) + getDelete().hashCode();
+          break;
+        case 4:
+          hash = (37 * hash) + SUBSCRIBE_FIELD_NUMBER;
+          hash = (53 * hash) + getSubscribe().hashCode();
+          break;
+        case 5:
+          hash = (37 * hash) + UNSUBSCRIBE_FIELD_NUMBER;
+          hash = (53 * hash) + getUnsubscribe().hashCode();
+          break;
+        case 6:
+          hash = (37 * hash) + LISTUSERTOPICS_FIELD_NUMBER;
+          hash = (53 * hash) + getListUserTopics().hashCode();
+          break;
+        case 7:
+          hash = (37 * hash) + LISTSUBSCRIBERS_FIELD_NUMBER;
+          hash = (53 * hash) + getListSubscribers().hashCode();
+          break;
+        case 8:
+          hash = (37 * hash) + LISTUSERMESSAGES_FIELD_NUMBER;
+          hash = (53 * hash) + getListUserMessages().hashCode();
+          break;
+        case 9:
+          hash = (37 * hash) + LISTTOPICMESSAGES_FIELD_NUMBER;
+          hash = (53 * hash) + getListTopicMessages().hashCode();
+          break;
+        case 10:
+          hash = (37 * hash) + LISTUSERS_FIELD_NUMBER;
+          hash = (53 * hash) + getListUsers().hashCode();
+          break;
+        case 11:
+          hash = (37 * hash) + LISTTOPICS_FIELD_NUMBER;
+          hash = (53 * hash) + getListTopics().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(se.umu.cs.ads.a1.grpc.MessengerProto.Request prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code messenger.Request}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:messenger.Request)
+        se.umu.cs.ads.a1.grpc.MessengerProto.RequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return se.umu.cs.ads.a1.grpc.MessengerProto.internal_static_messenger_Request_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return se.umu.cs.ads.a1.grpc.MessengerProto.internal_static_messenger_Request_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                se.umu.cs.ads.a1.grpc.MessengerProto.Request.class, se.umu.cs.ads.a1.grpc.MessengerProto.Request.Builder.class);
+      }
+
+      // Construct using se.umu.cs.ads.a1.grpc.MessengerProto.Request.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        payloadCase_ = 0;
+        payload_ = null;
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return se.umu.cs.ads.a1.grpc.MessengerProto.internal_static_messenger_Request_descriptor;
+      }
+
+      @java.lang.Override
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Request getDefaultInstanceForType() {
+        return se.umu.cs.ads.a1.grpc.MessengerProto.Request.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Request build() {
+        se.umu.cs.ads.a1.grpc.MessengerProto.Request result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Request buildPartial() {
+        se.umu.cs.ads.a1.grpc.MessengerProto.Request result = new se.umu.cs.ads.a1.grpc.MessengerProto.Request(this);
+        if (payloadCase_ == 1) {
+          if (storeBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = storeBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 2) {
+          if (retrieveBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = retrieveBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 3) {
+          if (deleteBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = deleteBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 4) {
+          if (subscribeBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = subscribeBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 5) {
+          if (unsubscribeBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = unsubscribeBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 6) {
+          if (listUserTopicsBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = listUserTopicsBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 7) {
+          if (listSubscribersBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = listSubscribersBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 8) {
+          if (listUserMessagesBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = listUserMessagesBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 9) {
+          if (listTopicMessagesBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = listTopicMessagesBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 10) {
+          if (listUsersBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = listUsersBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 11) {
+          if (listTopicsBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = listTopicsBuilder_.build();
+          }
+        }
+        result.payloadCase_ = payloadCase_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof se.umu.cs.ads.a1.grpc.MessengerProto.Request) {
+          return mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.Request)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(se.umu.cs.ads.a1.grpc.MessengerProto.Request other) {
+        if (other == se.umu.cs.ads.a1.grpc.MessengerProto.Request.getDefaultInstance()) return this;
+        switch (other.getPayloadCase()) {
+          case STORE: {
+            mergeStore(other.getStore());
+            break;
+          }
+          case RETRIEVE: {
+            mergeRetrieve(other.getRetrieve());
+            break;
+          }
+          case DELETE: {
+            mergeDelete(other.getDelete());
+            break;
+          }
+          case SUBSCRIBE: {
+            mergeSubscribe(other.getSubscribe());
+            break;
+          }
+          case UNSUBSCRIBE: {
+            mergeUnsubscribe(other.getUnsubscribe());
+            break;
+          }
+          case LISTUSERTOPICS: {
+            mergeListUserTopics(other.getListUserTopics());
+            break;
+          }
+          case LISTSUBSCRIBERS: {
+            mergeListSubscribers(other.getListSubscribers());
+            break;
+          }
+          case LISTUSERMESSAGES: {
+            mergeListUserMessages(other.getListUserMessages());
+            break;
+          }
+          case LISTTOPICMESSAGES: {
+            mergeListTopicMessages(other.getListTopicMessages());
+            break;
+          }
+          case LISTUSERS: {
+            mergeListUsers(other.getListUsers());
+            break;
+          }
+          case LISTTOPICS: {
+            mergeListTopics(other.getListTopics());
+            break;
+          }
+          case PAYLOAD_NOT_SET: {
+            break;
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        se.umu.cs.ads.a1.grpc.MessengerProto.Request parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (se.umu.cs.ads.a1.grpc.MessengerProto.Request) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int payloadCase_ = 0;
+      private java.lang.Object payload_;
+      public PayloadCase
+          getPayloadCase() {
+        return PayloadCase.forNumber(
+            payloadCase_);
+      }
+
+      public Builder clearPayload() {
+        payloadCase_ = 0;
+        payload_ = null;
+        onChanged();
+        return this;
+      }
+
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest, se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequestOrBuilder> storeBuilder_;
+      /**
+       * <code>.messenger.StoreRequest store = 1;</code>
+       */
+      public boolean hasStore() {
+        return payloadCase_ == 1;
+      }
+      /**
+       * <code>.messenger.StoreRequest store = 1;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest getStore() {
+        if (storeBuilder_ == null) {
+          if (payloadCase_ == 1) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 1) {
+            return storeBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.StoreRequest store = 1;</code>
+       */
+      public Builder setStore(se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest value) {
+        if (storeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          storeBuilder_.setMessage(value);
+        }
+        payloadCase_ = 1;
+        return this;
+      }
+      /**
+       * <code>.messenger.StoreRequest store = 1;</code>
+       */
+      public Builder setStore(
+          se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.Builder builderForValue) {
+        if (storeBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          storeBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 1;
+        return this;
+      }
+      /**
+       * <code>.messenger.StoreRequest store = 1;</code>
+       */
+      public Builder mergeStore(se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest value) {
+        if (storeBuilder_ == null) {
+          if (payloadCase_ == 1 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 1) {
+            storeBuilder_.mergeFrom(value);
+          }
+          storeBuilder_.setMessage(value);
+        }
+        payloadCase_ = 1;
+        return this;
+      }
+      /**
+       * <code>.messenger.StoreRequest store = 1;</code>
+       */
+      public Builder clearStore() {
+        if (storeBuilder_ == null) {
+          if (payloadCase_ == 1) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 1) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          storeBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.StoreRequest store = 1;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.Builder getStoreBuilder() {
+        return getStoreFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.StoreRequest store = 1;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequestOrBuilder getStoreOrBuilder() {
+        if ((payloadCase_ == 1) && (storeBuilder_ != null)) {
+          return storeBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 1) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.StoreRequest store = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest, se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequestOrBuilder> 
+          getStoreFieldBuilder() {
+        if (storeBuilder_ == null) {
+          if (!(payloadCase_ == 1)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.getDefaultInstance();
+          }
+          storeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest, se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequestOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.StoreRequest) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 1;
+        onChanged();;
+        return storeBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequestOrBuilder> retrieveBuilder_;
+      /**
+       * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+       */
+      public boolean hasRetrieve() {
+        return payloadCase_ == 2;
+      }
+      /**
+       * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest getRetrieve() {
+        if (retrieveBuilder_ == null) {
+          if (payloadCase_ == 2) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 2) {
+            return retrieveBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+       */
+      public Builder setRetrieve(se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest value) {
+        if (retrieveBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          retrieveBuilder_.setMessage(value);
+        }
+        payloadCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+       */
+      public Builder setRetrieve(
+          se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.Builder builderForValue) {
+        if (retrieveBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          retrieveBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+       */
+      public Builder mergeRetrieve(se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest value) {
+        if (retrieveBuilder_ == null) {
+          if (payloadCase_ == 2 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 2) {
+            retrieveBuilder_.mergeFrom(value);
+          }
+          retrieveBuilder_.setMessage(value);
+        }
+        payloadCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+       */
+      public Builder clearRetrieve() {
+        if (retrieveBuilder_ == null) {
+          if (payloadCase_ == 2) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 2) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          retrieveBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.Builder getRetrieveBuilder() {
+        return getRetrieveFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequestOrBuilder getRetrieveOrBuilder() {
+        if ((payloadCase_ == 2) && (retrieveBuilder_ != null)) {
+          return retrieveBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 2) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.RetrieveRequest retrieve = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequestOrBuilder> 
+          getRetrieveFieldBuilder() {
+        if (retrieveBuilder_ == null) {
+          if (!(payloadCase_ == 2)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.getDefaultInstance();
+          }
+          retrieveBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequestOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveRequest) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 2;
+        onChanged();;
+        return retrieveBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest, se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequestOrBuilder> deleteBuilder_;
+      /**
+       * <code>.messenger.DeleteRequest delete = 3;</code>
+       */
+      public boolean hasDelete() {
+        return payloadCase_ == 3;
+      }
+      /**
+       * <code>.messenger.DeleteRequest delete = 3;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest getDelete() {
+        if (deleteBuilder_ == null) {
+          if (payloadCase_ == 3) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 3) {
+            return deleteBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.DeleteRequest delete = 3;</code>
+       */
+      public Builder setDelete(se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest value) {
+        if (deleteBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          deleteBuilder_.setMessage(value);
+        }
+        payloadCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.messenger.DeleteRequest delete = 3;</code>
+       */
+      public Builder setDelete(
+          se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.Builder builderForValue) {
+        if (deleteBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          deleteBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.messenger.DeleteRequest delete = 3;</code>
+       */
+      public Builder mergeDelete(se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest value) {
+        if (deleteBuilder_ == null) {
+          if (payloadCase_ == 3 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 3) {
+            deleteBuilder_.mergeFrom(value);
+          }
+          deleteBuilder_.setMessage(value);
+        }
+        payloadCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.messenger.DeleteRequest delete = 3;</code>
+       */
+      public Builder clearDelete() {
+        if (deleteBuilder_ == null) {
+          if (payloadCase_ == 3) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 3) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          deleteBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.DeleteRequest delete = 3;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.Builder getDeleteBuilder() {
+        return getDeleteFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.DeleteRequest delete = 3;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequestOrBuilder getDeleteOrBuilder() {
+        if ((payloadCase_ == 3) && (deleteBuilder_ != null)) {
+          return deleteBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 3) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.DeleteRequest delete = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest, se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequestOrBuilder> 
+          getDeleteFieldBuilder() {
+        if (deleteBuilder_ == null) {
+          if (!(payloadCase_ == 3)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.getDefaultInstance();
+          }
+          deleteBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest, se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequestOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.DeleteRequest) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 3;
+        onChanged();;
+        return deleteBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder> subscribeBuilder_;
+      /**
+       * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+       */
+      public boolean hasSubscribe() {
+        return payloadCase_ == 4;
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest getSubscribe() {
+        if (subscribeBuilder_ == null) {
+          if (payloadCase_ == 4) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 4) {
+            return subscribeBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+       */
+      public Builder setSubscribe(se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest value) {
+        if (subscribeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          subscribeBuilder_.setMessage(value);
+        }
+        payloadCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+       */
+      public Builder setSubscribe(
+          se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder builderForValue) {
+        if (subscribeBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          subscribeBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+       */
+      public Builder mergeSubscribe(se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest value) {
+        if (subscribeBuilder_ == null) {
+          if (payloadCase_ == 4 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 4) {
+            subscribeBuilder_.mergeFrom(value);
+          }
+          subscribeBuilder_.setMessage(value);
+        }
+        payloadCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+       */
+      public Builder clearSubscribe() {
+        if (subscribeBuilder_ == null) {
+          if (payloadCase_ == 4) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 4) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          subscribeBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder getSubscribeBuilder() {
+        return getSubscribeFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder getSubscribeOrBuilder() {
+        if ((payloadCase_ == 4) && (subscribeBuilder_ != null)) {
+          return subscribeBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 4) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest subscribe = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder> 
+          getSubscribeFieldBuilder() {
+        if (subscribeBuilder_ == null) {
+          if (!(payloadCase_ == 4)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+          }
+          subscribeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 4;
+        onChanged();;
+        return subscribeBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder> unsubscribeBuilder_;
+      /**
+       * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+       */
+      public boolean hasUnsubscribe() {
+        return payloadCase_ == 5;
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest getUnsubscribe() {
+        if (unsubscribeBuilder_ == null) {
+          if (payloadCase_ == 5) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 5) {
+            return unsubscribeBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+       */
+      public Builder setUnsubscribe(se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest value) {
+        if (unsubscribeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          unsubscribeBuilder_.setMessage(value);
+        }
+        payloadCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+       */
+      public Builder setUnsubscribe(
+          se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder builderForValue) {
+        if (unsubscribeBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          unsubscribeBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+       */
+      public Builder mergeUnsubscribe(se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest value) {
+        if (unsubscribeBuilder_ == null) {
+          if (payloadCase_ == 5 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 5) {
+            unsubscribeBuilder_.mergeFrom(value);
+          }
+          unsubscribeBuilder_.setMessage(value);
+        }
+        payloadCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+       */
+      public Builder clearUnsubscribe() {
+        if (unsubscribeBuilder_ == null) {
+          if (payloadCase_ == 5) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 5) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          unsubscribeBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder getUnsubscribeBuilder() {
+        return getUnsubscribeFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder getUnsubscribeOrBuilder() {
+        if ((payloadCase_ == 5) && (unsubscribeBuilder_ != null)) {
+          return unsubscribeBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 5) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.SubscriptionRequest unsubscribe = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder> 
+          getUnsubscribeFieldBuilder() {
+        if (unsubscribeBuilder_ == null) {
+          if (!(payloadCase_ == 5)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.getDefaultInstance();
+          }
+          unsubscribeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequestOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.SubscriptionRequest) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 5;
+        onChanged();;
+        return unsubscribeBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.Username, se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder> listUserTopicsBuilder_;
+      /**
+       * <code>.messenger.Username listUserTopics = 6;</code>
+       */
+      public boolean hasListUserTopics() {
+        return payloadCase_ == 6;
+      }
+      /**
+       * <code>.messenger.Username listUserTopics = 6;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Username getListUserTopics() {
+        if (listUserTopicsBuilder_ == null) {
+          if (payloadCase_ == 6) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 6) {
+            return listUserTopicsBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.Username listUserTopics = 6;</code>
+       */
+      public Builder setListUserTopics(se.umu.cs.ads.a1.grpc.MessengerProto.Username value) {
+        if (listUserTopicsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          listUserTopicsBuilder_.setMessage(value);
+        }
+        payloadCase_ = 6;
+        return this;
+      }
+      /**
+       * <code>.messenger.Username listUserTopics = 6;</code>
+       */
+      public Builder setListUserTopics(
+          se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder builderForValue) {
+        if (listUserTopicsBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          listUserTopicsBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 6;
+        return this;
+      }
+      /**
+       * <code>.messenger.Username listUserTopics = 6;</code>
+       */
+      public Builder mergeListUserTopics(se.umu.cs.ads.a1.grpc.MessengerProto.Username value) {
+        if (listUserTopicsBuilder_ == null) {
+          if (payloadCase_ == 6 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.Username.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 6) {
+            listUserTopicsBuilder_.mergeFrom(value);
+          }
+          listUserTopicsBuilder_.setMessage(value);
+        }
+        payloadCase_ = 6;
+        return this;
+      }
+      /**
+       * <code>.messenger.Username listUserTopics = 6;</code>
+       */
+      public Builder clearListUserTopics() {
+        if (listUserTopicsBuilder_ == null) {
+          if (payloadCase_ == 6) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 6) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          listUserTopicsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.Username listUserTopics = 6;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder getListUserTopicsBuilder() {
+        return getListUserTopicsFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.Username listUserTopics = 6;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder getListUserTopicsOrBuilder() {
+        if ((payloadCase_ == 6) && (listUserTopicsBuilder_ != null)) {
+          return listUserTopicsBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 6) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.Username listUserTopics = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.Username, se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder> 
+          getListUserTopicsFieldBuilder() {
+        if (listUserTopicsBuilder_ == null) {
+          if (!(payloadCase_ == 6)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+          }
+          listUserTopicsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.Username, se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 6;
+        onChanged();;
+        return listUserTopicsBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.Topic, se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder> listSubscribersBuilder_;
+      /**
+       * <code>.messenger.Topic listSubscribers = 7;</code>
+       */
+      public boolean hasListSubscribers() {
+        return payloadCase_ == 7;
+      }
+      /**
+       * <code>.messenger.Topic listSubscribers = 7;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Topic getListSubscribers() {
+        if (listSubscribersBuilder_ == null) {
+          if (payloadCase_ == 7) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 7) {
+            return listSubscribersBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.Topic listSubscribers = 7;</code>
+       */
+      public Builder setListSubscribers(se.umu.cs.ads.a1.grpc.MessengerProto.Topic value) {
+        if (listSubscribersBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          listSubscribersBuilder_.setMessage(value);
+        }
+        payloadCase_ = 7;
+        return this;
+      }
+      /**
+       * <code>.messenger.Topic listSubscribers = 7;</code>
+       */
+      public Builder setListSubscribers(
+          se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder builderForValue) {
+        if (listSubscribersBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          listSubscribersBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 7;
+        return this;
+      }
+      /**
+       * <code>.messenger.Topic listSubscribers = 7;</code>
+       */
+      public Builder mergeListSubscribers(se.umu.cs.ads.a1.grpc.MessengerProto.Topic value) {
+        if (listSubscribersBuilder_ == null) {
+          if (payloadCase_ == 7 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.Topic.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 7) {
+            listSubscribersBuilder_.mergeFrom(value);
+          }
+          listSubscribersBuilder_.setMessage(value);
+        }
+        payloadCase_ = 7;
+        return this;
+      }
+      /**
+       * <code>.messenger.Topic listSubscribers = 7;</code>
+       */
+      public Builder clearListSubscribers() {
+        if (listSubscribersBuilder_ == null) {
+          if (payloadCase_ == 7) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 7) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          listSubscribersBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.Topic listSubscribers = 7;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder getListSubscribersBuilder() {
+        return getListSubscribersFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.Topic listSubscribers = 7;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder getListSubscribersOrBuilder() {
+        if ((payloadCase_ == 7) && (listSubscribersBuilder_ != null)) {
+          return listSubscribersBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 7) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.Topic listSubscribers = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.Topic, se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder> 
+          getListSubscribersFieldBuilder() {
+        if (listSubscribersBuilder_ == null) {
+          if (!(payloadCase_ == 7)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+          }
+          listSubscribersBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.Topic, se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 7;
+        onChanged();;
+        return listSubscribersBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.Username, se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder> listUserMessagesBuilder_;
+      /**
+       * <code>.messenger.Username listUserMessages = 8;</code>
+       */
+      public boolean hasListUserMessages() {
+        return payloadCase_ == 8;
+      }
+      /**
+       * <code>.messenger.Username listUserMessages = 8;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Username getListUserMessages() {
+        if (listUserMessagesBuilder_ == null) {
+          if (payloadCase_ == 8) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 8) {
+            return listUserMessagesBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.Username listUserMessages = 8;</code>
+       */
+      public Builder setListUserMessages(se.umu.cs.ads.a1.grpc.MessengerProto.Username value) {
+        if (listUserMessagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          listUserMessagesBuilder_.setMessage(value);
+        }
+        payloadCase_ = 8;
+        return this;
+      }
+      /**
+       * <code>.messenger.Username listUserMessages = 8;</code>
+       */
+      public Builder setListUserMessages(
+          se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder builderForValue) {
+        if (listUserMessagesBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          listUserMessagesBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 8;
+        return this;
+      }
+      /**
+       * <code>.messenger.Username listUserMessages = 8;</code>
+       */
+      public Builder mergeListUserMessages(se.umu.cs.ads.a1.grpc.MessengerProto.Username value) {
+        if (listUserMessagesBuilder_ == null) {
+          if (payloadCase_ == 8 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.Username.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 8) {
+            listUserMessagesBuilder_.mergeFrom(value);
+          }
+          listUserMessagesBuilder_.setMessage(value);
+        }
+        payloadCase_ = 8;
+        return this;
+      }
+      /**
+       * <code>.messenger.Username listUserMessages = 8;</code>
+       */
+      public Builder clearListUserMessages() {
+        if (listUserMessagesBuilder_ == null) {
+          if (payloadCase_ == 8) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 8) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          listUserMessagesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.Username listUserMessages = 8;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder getListUserMessagesBuilder() {
+        return getListUserMessagesFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.Username listUserMessages = 8;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder getListUserMessagesOrBuilder() {
+        if ((payloadCase_ == 8) && (listUserMessagesBuilder_ != null)) {
+          return listUserMessagesBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 8) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.Username listUserMessages = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.Username, se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder> 
+          getListUserMessagesFieldBuilder() {
+        if (listUserMessagesBuilder_ == null) {
+          if (!(payloadCase_ == 8)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.Username.getDefaultInstance();
+          }
+          listUserMessagesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.Username, se.umu.cs.ads.a1.grpc.MessengerProto.Username.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.Username) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 8;
+        onChanged();;
+        return listUserMessagesBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.Topic, se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder> listTopicMessagesBuilder_;
+      /**
+       * <code>.messenger.Topic listTopicMessages = 9;</code>
+       */
+      public boolean hasListTopicMessages() {
+        return payloadCase_ == 9;
+      }
+      /**
+       * <code>.messenger.Topic listTopicMessages = 9;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Topic getListTopicMessages() {
+        if (listTopicMessagesBuilder_ == null) {
+          if (payloadCase_ == 9) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 9) {
+            return listTopicMessagesBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.Topic listTopicMessages = 9;</code>
+       */
+      public Builder setListTopicMessages(se.umu.cs.ads.a1.grpc.MessengerProto.Topic value) {
+        if (listTopicMessagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          listTopicMessagesBuilder_.setMessage(value);
+        }
+        payloadCase_ = 9;
+        return this;
+      }
+      /**
+       * <code>.messenger.Topic listTopicMessages = 9;</code>
+       */
+      public Builder setListTopicMessages(
+          se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder builderForValue) {
+        if (listTopicMessagesBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          listTopicMessagesBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 9;
+        return this;
+      }
+      /**
+       * <code>.messenger.Topic listTopicMessages = 9;</code>
+       */
+      public Builder mergeListTopicMessages(se.umu.cs.ads.a1.grpc.MessengerProto.Topic value) {
+        if (listTopicMessagesBuilder_ == null) {
+          if (payloadCase_ == 9 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.Topic.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 9) {
+            listTopicMessagesBuilder_.mergeFrom(value);
+          }
+          listTopicMessagesBuilder_.setMessage(value);
+        }
+        payloadCase_ = 9;
+        return this;
+      }
+      /**
+       * <code>.messenger.Topic listTopicMessages = 9;</code>
+       */
+      public Builder clearListTopicMessages() {
+        if (listTopicMessagesBuilder_ == null) {
+          if (payloadCase_ == 9) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 9) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          listTopicMessagesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.Topic listTopicMessages = 9;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder getListTopicMessagesBuilder() {
+        return getListTopicMessagesFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.Topic listTopicMessages = 9;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder getListTopicMessagesOrBuilder() {
+        if ((payloadCase_ == 9) && (listTopicMessagesBuilder_ != null)) {
+          return listTopicMessagesBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 9) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.Topic listTopicMessages = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.Topic, se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder> 
+          getListTopicMessagesFieldBuilder() {
+        if (listTopicMessagesBuilder_ == null) {
+          if (!(payloadCase_ == 9)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.Topic.getDefaultInstance();
+          }
+          listTopicMessagesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.Topic, se.umu.cs.ads.a1.grpc.MessengerProto.Topic.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.TopicOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.Topic) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 9;
+        onChanged();;
+        return listTopicMessagesBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Empty, com.google.protobuf.Empty.Builder, com.google.protobuf.EmptyOrBuilder> listUsersBuilder_;
+      /**
+       * <code>.google.protobuf.Empty listUsers = 10;</code>
+       */
+      public boolean hasListUsers() {
+        return payloadCase_ == 10;
+      }
+      /**
+       * <code>.google.protobuf.Empty listUsers = 10;</code>
+       */
+      public com.google.protobuf.Empty getListUsers() {
+        if (listUsersBuilder_ == null) {
+          if (payloadCase_ == 10) {
+            return (com.google.protobuf.Empty) payload_;
+          }
+          return com.google.protobuf.Empty.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 10) {
+            return listUsersBuilder_.getMessage();
+          }
+          return com.google.protobuf.Empty.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.google.protobuf.Empty listUsers = 10;</code>
+       */
+      public Builder setListUsers(com.google.protobuf.Empty value) {
+        if (listUsersBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          listUsersBuilder_.setMessage(value);
+        }
+        payloadCase_ = 10;
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty listUsers = 10;</code>
+       */
+      public Builder setListUsers(
+          com.google.protobuf.Empty.Builder builderForValue) {
+        if (listUsersBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          listUsersBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 10;
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty listUsers = 10;</code>
+       */
+      public Builder mergeListUsers(com.google.protobuf.Empty value) {
+        if (listUsersBuilder_ == null) {
+          if (payloadCase_ == 10 &&
+              payload_ != com.google.protobuf.Empty.getDefaultInstance()) {
+            payload_ = com.google.protobuf.Empty.newBuilder((com.google.protobuf.Empty) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 10) {
+            listUsersBuilder_.mergeFrom(value);
+          }
+          listUsersBuilder_.setMessage(value);
+        }
+        payloadCase_ = 10;
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty listUsers = 10;</code>
+       */
+      public Builder clearListUsers() {
+        if (listUsersBuilder_ == null) {
+          if (payloadCase_ == 10) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 10) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          listUsersBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty listUsers = 10;</code>
+       */
+      public com.google.protobuf.Empty.Builder getListUsersBuilder() {
+        return getListUsersFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.google.protobuf.Empty listUsers = 10;</code>
+       */
+      public com.google.protobuf.EmptyOrBuilder getListUsersOrBuilder() {
+        if ((payloadCase_ == 10) && (listUsersBuilder_ != null)) {
+          return listUsersBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 10) {
+            return (com.google.protobuf.Empty) payload_;
+          }
+          return com.google.protobuf.Empty.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.google.protobuf.Empty listUsers = 10;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Empty, com.google.protobuf.Empty.Builder, com.google.protobuf.EmptyOrBuilder> 
+          getListUsersFieldBuilder() {
+        if (listUsersBuilder_ == null) {
+          if (!(payloadCase_ == 10)) {
+            payload_ = com.google.protobuf.Empty.getDefaultInstance();
+          }
+          listUsersBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Empty, com.google.protobuf.Empty.Builder, com.google.protobuf.EmptyOrBuilder>(
+                  (com.google.protobuf.Empty) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 10;
+        onChanged();;
+        return listUsersBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Empty, com.google.protobuf.Empty.Builder, com.google.protobuf.EmptyOrBuilder> listTopicsBuilder_;
+      /**
+       * <code>.google.protobuf.Empty listTopics = 11;</code>
+       */
+      public boolean hasListTopics() {
+        return payloadCase_ == 11;
+      }
+      /**
+       * <code>.google.protobuf.Empty listTopics = 11;</code>
+       */
+      public com.google.protobuf.Empty getListTopics() {
+        if (listTopicsBuilder_ == null) {
+          if (payloadCase_ == 11) {
+            return (com.google.protobuf.Empty) payload_;
+          }
+          return com.google.protobuf.Empty.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 11) {
+            return listTopicsBuilder_.getMessage();
+          }
+          return com.google.protobuf.Empty.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.google.protobuf.Empty listTopics = 11;</code>
+       */
+      public Builder setListTopics(com.google.protobuf.Empty value) {
+        if (listTopicsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          listTopicsBuilder_.setMessage(value);
+        }
+        payloadCase_ = 11;
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty listTopics = 11;</code>
+       */
+      public Builder setListTopics(
+          com.google.protobuf.Empty.Builder builderForValue) {
+        if (listTopicsBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          listTopicsBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 11;
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty listTopics = 11;</code>
+       */
+      public Builder mergeListTopics(com.google.protobuf.Empty value) {
+        if (listTopicsBuilder_ == null) {
+          if (payloadCase_ == 11 &&
+              payload_ != com.google.protobuf.Empty.getDefaultInstance()) {
+            payload_ = com.google.protobuf.Empty.newBuilder((com.google.protobuf.Empty) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 11) {
+            listTopicsBuilder_.mergeFrom(value);
+          }
+          listTopicsBuilder_.setMessage(value);
+        }
+        payloadCase_ = 11;
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty listTopics = 11;</code>
+       */
+      public Builder clearListTopics() {
+        if (listTopicsBuilder_ == null) {
+          if (payloadCase_ == 11) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 11) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          listTopicsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty listTopics = 11;</code>
+       */
+      public com.google.protobuf.Empty.Builder getListTopicsBuilder() {
+        return getListTopicsFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.google.protobuf.Empty listTopics = 11;</code>
+       */
+      public com.google.protobuf.EmptyOrBuilder getListTopicsOrBuilder() {
+        if ((payloadCase_ == 11) && (listTopicsBuilder_ != null)) {
+          return listTopicsBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 11) {
+            return (com.google.protobuf.Empty) payload_;
+          }
+          return com.google.protobuf.Empty.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.google.protobuf.Empty listTopics = 11;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Empty, com.google.protobuf.Empty.Builder, com.google.protobuf.EmptyOrBuilder> 
+          getListTopicsFieldBuilder() {
+        if (listTopicsBuilder_ == null) {
+          if (!(payloadCase_ == 11)) {
+            payload_ = com.google.protobuf.Empty.getDefaultInstance();
+          }
+          listTopicsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Empty, com.google.protobuf.Empty.Builder, com.google.protobuf.EmptyOrBuilder>(
+                  (com.google.protobuf.Empty) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 11;
+        onChanged();;
+        return listTopicsBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:messenger.Request)
+    }
+
+    // @@protoc_insertion_point(class_scope:messenger.Request)
+    private static final se.umu.cs.ads.a1.grpc.MessengerProto.Request DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new se.umu.cs.ads.a1.grpc.MessengerProto.Request();
+    }
+
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Request getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Request>
+        PARSER = new com.google.protobuf.AbstractParser<Request>() {
+      @java.lang.Override
+      public Request parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Request(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Request> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Request> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public se.umu.cs.ads.a1.grpc.MessengerProto.Request getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:messenger.Response)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.google.protobuf.Empty empty = 1;</code>
+     */
+    boolean hasEmpty();
+    /**
+     * <code>.google.protobuf.Empty empty = 1;</code>
+     */
+    com.google.protobuf.Empty getEmpty();
+    /**
+     * <code>.google.protobuf.Empty empty = 1;</code>
+     */
+    com.google.protobuf.EmptyOrBuilder getEmptyOrBuilder();
+
+    /**
+     * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+     */
+    boolean hasRetrieveResp();
+    /**
+     * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse getRetrieveResp();
+    /**
+     * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponseOrBuilder getRetrieveRespOrBuilder();
+
+    /**
+     * <code>.messenger.TopicList topicList = 3;</code>
+     */
+    boolean hasTopicList();
+    /**
+     * <code>.messenger.TopicList topicList = 3;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.TopicList getTopicList();
+    /**
+     * <code>.messenger.TopicList topicList = 3;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.TopicListOrBuilder getTopicListOrBuilder();
+
+    /**
+     * <code>.messenger.UsernameList usernameList = 4;</code>
+     */
+    boolean hasUsernameList();
+    /**
+     * <code>.messenger.UsernameList usernameList = 4;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList getUsernameList();
+    /**
+     * <code>.messenger.UsernameList usernameList = 4;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.UsernameListOrBuilder getUsernameListOrBuilder();
+
+    /**
+     * <code>.messenger.MessageIdList messageIdList = 5;</code>
+     */
+    boolean hasMessageIdList();
+    /**
+     * <code>.messenger.MessageIdList messageIdList = 5;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList getMessageIdList();
+    /**
+     * <code>.messenger.MessageIdList messageIdList = 5;</code>
+     */
+    se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdListOrBuilder getMessageIdListOrBuilder();
+
+    public se.umu.cs.ads.a1.grpc.MessengerProto.Response.PayloadCase getPayloadCase();
+  }
+  /**
+   * Protobuf type {@code messenger.Response}
+   */
+  public  static final class Response extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:messenger.Response)
+      ResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Response.newBuilder() to construct.
+    private Response(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Response() {
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Response(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              com.google.protobuf.Empty.Builder subBuilder = null;
+              if (payloadCase_ == 1) {
+                subBuilder = ((com.google.protobuf.Empty) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(com.google.protobuf.Empty.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((com.google.protobuf.Empty) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 1;
+              break;
+            }
+            case 18: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.Builder subBuilder = null;
+              if (payloadCase_ == 2) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 2;
+              break;
+            }
+            case 26: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.Builder subBuilder = null;
+              if (payloadCase_ == 3) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.TopicList) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.TopicList) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 3;
+              break;
+            }
+            case 34: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.Builder subBuilder = null;
+              if (payloadCase_ == 4) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 4;
+              break;
+            }
+            case 42: {
+              se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.Builder subBuilder = null;
+              if (payloadCase_ == 5) {
+                subBuilder = ((se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList) payload_).toBuilder();
+              }
+              payload_ =
+                  input.readMessage(se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList) payload_);
+                payload_ = subBuilder.buildPartial();
+              }
+              payloadCase_ = 5;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return se.umu.cs.ads.a1.grpc.MessengerProto.internal_static_messenger_Response_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return se.umu.cs.ads.a1.grpc.MessengerProto.internal_static_messenger_Response_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              se.umu.cs.ads.a1.grpc.MessengerProto.Response.class, se.umu.cs.ads.a1.grpc.MessengerProto.Response.Builder.class);
+    }
+
+    private int payloadCase_ = 0;
+    private java.lang.Object payload_;
+    public enum PayloadCase
+        implements com.google.protobuf.Internal.EnumLite {
+      EMPTY(1),
+      RETRIEVERESP(2),
+      TOPICLIST(3),
+      USERNAMELIST(4),
+      MESSAGEIDLIST(5),
+      PAYLOAD_NOT_SET(0);
+      private final int value;
+      private PayloadCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static PayloadCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static PayloadCase forNumber(int value) {
+        switch (value) {
+          case 1: return EMPTY;
+          case 2: return RETRIEVERESP;
+          case 3: return TOPICLIST;
+          case 4: return USERNAMELIST;
+          case 5: return MESSAGEIDLIST;
+          case 0: return PAYLOAD_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public PayloadCase
+    getPayloadCase() {
+      return PayloadCase.forNumber(
+          payloadCase_);
+    }
+
+    public static final int EMPTY_FIELD_NUMBER = 1;
+    /**
+     * <code>.google.protobuf.Empty empty = 1;</code>
+     */
+    public boolean hasEmpty() {
+      return payloadCase_ == 1;
+    }
+    /**
+     * <code>.google.protobuf.Empty empty = 1;</code>
+     */
+    public com.google.protobuf.Empty getEmpty() {
+      if (payloadCase_ == 1) {
+         return (com.google.protobuf.Empty) payload_;
+      }
+      return com.google.protobuf.Empty.getDefaultInstance();
+    }
+    /**
+     * <code>.google.protobuf.Empty empty = 1;</code>
+     */
+    public com.google.protobuf.EmptyOrBuilder getEmptyOrBuilder() {
+      if (payloadCase_ == 1) {
+         return (com.google.protobuf.Empty) payload_;
+      }
+      return com.google.protobuf.Empty.getDefaultInstance();
+    }
+
+    public static final int RETRIEVERESP_FIELD_NUMBER = 2;
+    /**
+     * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+     */
+    public boolean hasRetrieveResp() {
+      return payloadCase_ == 2;
+    }
+    /**
+     * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse getRetrieveResp() {
+      if (payloadCase_ == 2) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponseOrBuilder getRetrieveRespOrBuilder() {
+      if (payloadCase_ == 2) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.getDefaultInstance();
+    }
+
+    public static final int TOPICLIST_FIELD_NUMBER = 3;
+    /**
+     * <code>.messenger.TopicList topicList = 3;</code>
+     */
+    public boolean hasTopicList() {
+      return payloadCase_ == 3;
+    }
+    /**
+     * <code>.messenger.TopicList topicList = 3;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.TopicList getTopicList() {
+      if (payloadCase_ == 3) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.TopicList) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.TopicList topicList = 3;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.TopicListOrBuilder getTopicListOrBuilder() {
+      if (payloadCase_ == 3) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.TopicList) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.getDefaultInstance();
+    }
+
+    public static final int USERNAMELIST_FIELD_NUMBER = 4;
+    /**
+     * <code>.messenger.UsernameList usernameList = 4;</code>
+     */
+    public boolean hasUsernameList() {
+      return payloadCase_ == 4;
+    }
+    /**
+     * <code>.messenger.UsernameList usernameList = 4;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList getUsernameList() {
+      if (payloadCase_ == 4) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.UsernameList usernameList = 4;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.UsernameListOrBuilder getUsernameListOrBuilder() {
+      if (payloadCase_ == 4) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.getDefaultInstance();
+    }
+
+    public static final int MESSAGEIDLIST_FIELD_NUMBER = 5;
+    /**
+     * <code>.messenger.MessageIdList messageIdList = 5;</code>
+     */
+    public boolean hasMessageIdList() {
+      return payloadCase_ == 5;
+    }
+    /**
+     * <code>.messenger.MessageIdList messageIdList = 5;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList getMessageIdList() {
+      if (payloadCase_ == 5) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.getDefaultInstance();
+    }
+    /**
+     * <code>.messenger.MessageIdList messageIdList = 5;</code>
+     */
+    public se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdListOrBuilder getMessageIdListOrBuilder() {
+      if (payloadCase_ == 5) {
+         return (se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList) payload_;
+      }
+      return se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.getDefaultInstance();
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (payloadCase_ == 1) {
+        output.writeMessage(1, (com.google.protobuf.Empty) payload_);
+      }
+      if (payloadCase_ == 2) {
+        output.writeMessage(2, (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse) payload_);
+      }
+      if (payloadCase_ == 3) {
+        output.writeMessage(3, (se.umu.cs.ads.a1.grpc.MessengerProto.TopicList) payload_);
+      }
+      if (payloadCase_ == 4) {
+        output.writeMessage(4, (se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList) payload_);
+      }
+      if (payloadCase_ == 5) {
+        output.writeMessage(5, (se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList) payload_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (payloadCase_ == 1) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, (com.google.protobuf.Empty) payload_);
+      }
+      if (payloadCase_ == 2) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse) payload_);
+      }
+      if (payloadCase_ == 3) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, (se.umu.cs.ads.a1.grpc.MessengerProto.TopicList) payload_);
+      }
+      if (payloadCase_ == 4) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, (se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList) payload_);
+      }
+      if (payloadCase_ == 5) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, (se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList) payload_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof se.umu.cs.ads.a1.grpc.MessengerProto.Response)) {
+        return super.equals(obj);
+      }
+      se.umu.cs.ads.a1.grpc.MessengerProto.Response other = (se.umu.cs.ads.a1.grpc.MessengerProto.Response) obj;
+
+      boolean result = true;
+      result = result && getPayloadCase().equals(
+          other.getPayloadCase());
+      if (!result) return false;
+      switch (payloadCase_) {
+        case 1:
+          result = result && getEmpty()
+              .equals(other.getEmpty());
+          break;
+        case 2:
+          result = result && getRetrieveResp()
+              .equals(other.getRetrieveResp());
+          break;
+        case 3:
+          result = result && getTopicList()
+              .equals(other.getTopicList());
+          break;
+        case 4:
+          result = result && getUsernameList()
+              .equals(other.getUsernameList());
+          break;
+        case 5:
+          result = result && getMessageIdList()
+              .equals(other.getMessageIdList());
+          break;
+        case 0:
+        default:
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (payloadCase_) {
+        case 1:
+          hash = (37 * hash) + EMPTY_FIELD_NUMBER;
+          hash = (53 * hash) + getEmpty().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + RETRIEVERESP_FIELD_NUMBER;
+          hash = (53 * hash) + getRetrieveResp().hashCode();
+          break;
+        case 3:
+          hash = (37 * hash) + TOPICLIST_FIELD_NUMBER;
+          hash = (53 * hash) + getTopicList().hashCode();
+          break;
+        case 4:
+          hash = (37 * hash) + USERNAMELIST_FIELD_NUMBER;
+          hash = (53 * hash) + getUsernameList().hashCode();
+          break;
+        case 5:
+          hash = (37 * hash) + MESSAGEIDLIST_FIELD_NUMBER;
+          hash = (53 * hash) + getMessageIdList().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(se.umu.cs.ads.a1.grpc.MessengerProto.Response prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code messenger.Response}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:messenger.Response)
+        se.umu.cs.ads.a1.grpc.MessengerProto.ResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return se.umu.cs.ads.a1.grpc.MessengerProto.internal_static_messenger_Response_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return se.umu.cs.ads.a1.grpc.MessengerProto.internal_static_messenger_Response_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                se.umu.cs.ads.a1.grpc.MessengerProto.Response.class, se.umu.cs.ads.a1.grpc.MessengerProto.Response.Builder.class);
+      }
+
+      // Construct using se.umu.cs.ads.a1.grpc.MessengerProto.Response.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        payloadCase_ = 0;
+        payload_ = null;
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return se.umu.cs.ads.a1.grpc.MessengerProto.internal_static_messenger_Response_descriptor;
+      }
+
+      @java.lang.Override
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Response getDefaultInstanceForType() {
+        return se.umu.cs.ads.a1.grpc.MessengerProto.Response.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Response build() {
+        se.umu.cs.ads.a1.grpc.MessengerProto.Response result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public se.umu.cs.ads.a1.grpc.MessengerProto.Response buildPartial() {
+        se.umu.cs.ads.a1.grpc.MessengerProto.Response result = new se.umu.cs.ads.a1.grpc.MessengerProto.Response(this);
+        if (payloadCase_ == 1) {
+          if (emptyBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = emptyBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 2) {
+          if (retrieveRespBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = retrieveRespBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 3) {
+          if (topicListBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = topicListBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 4) {
+          if (usernameListBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = usernameListBuilder_.build();
+          }
+        }
+        if (payloadCase_ == 5) {
+          if (messageIdListBuilder_ == null) {
+            result.payload_ = payload_;
+          } else {
+            result.payload_ = messageIdListBuilder_.build();
+          }
+        }
+        result.payloadCase_ = payloadCase_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof se.umu.cs.ads.a1.grpc.MessengerProto.Response) {
+          return mergeFrom((se.umu.cs.ads.a1.grpc.MessengerProto.Response)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(se.umu.cs.ads.a1.grpc.MessengerProto.Response other) {
+        if (other == se.umu.cs.ads.a1.grpc.MessengerProto.Response.getDefaultInstance()) return this;
+        switch (other.getPayloadCase()) {
+          case EMPTY: {
+            mergeEmpty(other.getEmpty());
+            break;
+          }
+          case RETRIEVERESP: {
+            mergeRetrieveResp(other.getRetrieveResp());
+            break;
+          }
+          case TOPICLIST: {
+            mergeTopicList(other.getTopicList());
+            break;
+          }
+          case USERNAMELIST: {
+            mergeUsernameList(other.getUsernameList());
+            break;
+          }
+          case MESSAGEIDLIST: {
+            mergeMessageIdList(other.getMessageIdList());
+            break;
+          }
+          case PAYLOAD_NOT_SET: {
+            break;
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        se.umu.cs.ads.a1.grpc.MessengerProto.Response parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (se.umu.cs.ads.a1.grpc.MessengerProto.Response) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int payloadCase_ = 0;
+      private java.lang.Object payload_;
+      public PayloadCase
+          getPayloadCase() {
+        return PayloadCase.forNumber(
+            payloadCase_);
+      }
+
+      public Builder clearPayload() {
+        payloadCase_ = 0;
+        payload_ = null;
+        onChanged();
+        return this;
+      }
+
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Empty, com.google.protobuf.Empty.Builder, com.google.protobuf.EmptyOrBuilder> emptyBuilder_;
+      /**
+       * <code>.google.protobuf.Empty empty = 1;</code>
+       */
+      public boolean hasEmpty() {
+        return payloadCase_ == 1;
+      }
+      /**
+       * <code>.google.protobuf.Empty empty = 1;</code>
+       */
+      public com.google.protobuf.Empty getEmpty() {
+        if (emptyBuilder_ == null) {
+          if (payloadCase_ == 1) {
+            return (com.google.protobuf.Empty) payload_;
+          }
+          return com.google.protobuf.Empty.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 1) {
+            return emptyBuilder_.getMessage();
+          }
+          return com.google.protobuf.Empty.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.google.protobuf.Empty empty = 1;</code>
+       */
+      public Builder setEmpty(com.google.protobuf.Empty value) {
+        if (emptyBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          emptyBuilder_.setMessage(value);
+        }
+        payloadCase_ = 1;
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty empty = 1;</code>
+       */
+      public Builder setEmpty(
+          com.google.protobuf.Empty.Builder builderForValue) {
+        if (emptyBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          emptyBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 1;
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty empty = 1;</code>
+       */
+      public Builder mergeEmpty(com.google.protobuf.Empty value) {
+        if (emptyBuilder_ == null) {
+          if (payloadCase_ == 1 &&
+              payload_ != com.google.protobuf.Empty.getDefaultInstance()) {
+            payload_ = com.google.protobuf.Empty.newBuilder((com.google.protobuf.Empty) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 1) {
+            emptyBuilder_.mergeFrom(value);
+          }
+          emptyBuilder_.setMessage(value);
+        }
+        payloadCase_ = 1;
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty empty = 1;</code>
+       */
+      public Builder clearEmpty() {
+        if (emptyBuilder_ == null) {
+          if (payloadCase_ == 1) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 1) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          emptyBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Empty empty = 1;</code>
+       */
+      public com.google.protobuf.Empty.Builder getEmptyBuilder() {
+        return getEmptyFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.google.protobuf.Empty empty = 1;</code>
+       */
+      public com.google.protobuf.EmptyOrBuilder getEmptyOrBuilder() {
+        if ((payloadCase_ == 1) && (emptyBuilder_ != null)) {
+          return emptyBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 1) {
+            return (com.google.protobuf.Empty) payload_;
+          }
+          return com.google.protobuf.Empty.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.google.protobuf.Empty empty = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Empty, com.google.protobuf.Empty.Builder, com.google.protobuf.EmptyOrBuilder> 
+          getEmptyFieldBuilder() {
+        if (emptyBuilder_ == null) {
+          if (!(payloadCase_ == 1)) {
+            payload_ = com.google.protobuf.Empty.getDefaultInstance();
+          }
+          emptyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Empty, com.google.protobuf.Empty.Builder, com.google.protobuf.EmptyOrBuilder>(
+                  (com.google.protobuf.Empty) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 1;
+        onChanged();;
+        return emptyBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponseOrBuilder> retrieveRespBuilder_;
+      /**
+       * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+       */
+      public boolean hasRetrieveResp() {
+        return payloadCase_ == 2;
+      }
+      /**
+       * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse getRetrieveResp() {
+        if (retrieveRespBuilder_ == null) {
+          if (payloadCase_ == 2) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 2) {
+            return retrieveRespBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+       */
+      public Builder setRetrieveResp(se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse value) {
+        if (retrieveRespBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          retrieveRespBuilder_.setMessage(value);
+        }
+        payloadCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+       */
+      public Builder setRetrieveResp(
+          se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.Builder builderForValue) {
+        if (retrieveRespBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          retrieveRespBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+       */
+      public Builder mergeRetrieveResp(se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse value) {
+        if (retrieveRespBuilder_ == null) {
+          if (payloadCase_ == 2 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 2) {
+            retrieveRespBuilder_.mergeFrom(value);
+          }
+          retrieveRespBuilder_.setMessage(value);
+        }
+        payloadCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+       */
+      public Builder clearRetrieveResp() {
+        if (retrieveRespBuilder_ == null) {
+          if (payloadCase_ == 2) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 2) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          retrieveRespBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.Builder getRetrieveRespBuilder() {
+        return getRetrieveRespFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponseOrBuilder getRetrieveRespOrBuilder() {
+        if ((payloadCase_ == 2) && (retrieveRespBuilder_ != null)) {
+          return retrieveRespBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 2) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.RetrieveResponse retrieveResp = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponseOrBuilder> 
+          getRetrieveRespFieldBuilder() {
+        if (retrieveRespBuilder_ == null) {
+          if (!(payloadCase_ == 2)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.getDefaultInstance();
+          }
+          retrieveRespBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponseOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.RetrieveResponse) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 2;
+        onChanged();;
+        return retrieveRespBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.TopicList, se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.TopicListOrBuilder> topicListBuilder_;
+      /**
+       * <code>.messenger.TopicList topicList = 3;</code>
+       */
+      public boolean hasTopicList() {
+        return payloadCase_ == 3;
+      }
+      /**
+       * <code>.messenger.TopicList topicList = 3;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.TopicList getTopicList() {
+        if (topicListBuilder_ == null) {
+          if (payloadCase_ == 3) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.TopicList) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 3) {
+            return topicListBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.TopicList topicList = 3;</code>
+       */
+      public Builder setTopicList(se.umu.cs.ads.a1.grpc.MessengerProto.TopicList value) {
+        if (topicListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          topicListBuilder_.setMessage(value);
+        }
+        payloadCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.messenger.TopicList topicList = 3;</code>
+       */
+      public Builder setTopicList(
+          se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.Builder builderForValue) {
+        if (topicListBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          topicListBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.messenger.TopicList topicList = 3;</code>
+       */
+      public Builder mergeTopicList(se.umu.cs.ads.a1.grpc.MessengerProto.TopicList value) {
+        if (topicListBuilder_ == null) {
+          if (payloadCase_ == 3 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.TopicList) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 3) {
+            topicListBuilder_.mergeFrom(value);
+          }
+          topicListBuilder_.setMessage(value);
+        }
+        payloadCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.messenger.TopicList topicList = 3;</code>
+       */
+      public Builder clearTopicList() {
+        if (topicListBuilder_ == null) {
+          if (payloadCase_ == 3) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 3) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          topicListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.TopicList topicList = 3;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.Builder getTopicListBuilder() {
+        return getTopicListFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.TopicList topicList = 3;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.TopicListOrBuilder getTopicListOrBuilder() {
+        if ((payloadCase_ == 3) && (topicListBuilder_ != null)) {
+          return topicListBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 3) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.TopicList) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.TopicList topicList = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.TopicList, se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.TopicListOrBuilder> 
+          getTopicListFieldBuilder() {
+        if (topicListBuilder_ == null) {
+          if (!(payloadCase_ == 3)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.getDefaultInstance();
+          }
+          topicListBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.TopicList, se.umu.cs.ads.a1.grpc.MessengerProto.TopicList.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.TopicListOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.TopicList) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 3;
+        onChanged();;
+        return topicListBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameListOrBuilder> usernameListBuilder_;
+      /**
+       * <code>.messenger.UsernameList usernameList = 4;</code>
+       */
+      public boolean hasUsernameList() {
+        return payloadCase_ == 4;
+      }
+      /**
+       * <code>.messenger.UsernameList usernameList = 4;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList getUsernameList() {
+        if (usernameListBuilder_ == null) {
+          if (payloadCase_ == 4) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 4) {
+            return usernameListBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.UsernameList usernameList = 4;</code>
+       */
+      public Builder setUsernameList(se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList value) {
+        if (usernameListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          usernameListBuilder_.setMessage(value);
+        }
+        payloadCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.messenger.UsernameList usernameList = 4;</code>
+       */
+      public Builder setUsernameList(
+          se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.Builder builderForValue) {
+        if (usernameListBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          usernameListBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.messenger.UsernameList usernameList = 4;</code>
+       */
+      public Builder mergeUsernameList(se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList value) {
+        if (usernameListBuilder_ == null) {
+          if (payloadCase_ == 4 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 4) {
+            usernameListBuilder_.mergeFrom(value);
+          }
+          usernameListBuilder_.setMessage(value);
+        }
+        payloadCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.messenger.UsernameList usernameList = 4;</code>
+       */
+      public Builder clearUsernameList() {
+        if (usernameListBuilder_ == null) {
+          if (payloadCase_ == 4) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 4) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          usernameListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.UsernameList usernameList = 4;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.Builder getUsernameListBuilder() {
+        return getUsernameListFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.UsernameList usernameList = 4;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.UsernameListOrBuilder getUsernameListOrBuilder() {
+        if ((payloadCase_ == 4) && (usernameListBuilder_ != null)) {
+          return usernameListBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 4) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.UsernameList usernameList = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameListOrBuilder> 
+          getUsernameListFieldBuilder() {
+        if (usernameListBuilder_ == null) {
+          if (!(payloadCase_ == 4)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.getDefaultInstance();
+          }
+          usernameListBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.UsernameListOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.UsernameList) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 4;
+        onChanged();;
+        return usernameListBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList, se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdListOrBuilder> messageIdListBuilder_;
+      /**
+       * <code>.messenger.MessageIdList messageIdList = 5;</code>
+       */
+      public boolean hasMessageIdList() {
+        return payloadCase_ == 5;
+      }
+      /**
+       * <code>.messenger.MessageIdList messageIdList = 5;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList getMessageIdList() {
+        if (messageIdListBuilder_ == null) {
+          if (payloadCase_ == 5) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.getDefaultInstance();
+        } else {
+          if (payloadCase_ == 5) {
+            return messageIdListBuilder_.getMessage();
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.MessageIdList messageIdList = 5;</code>
+       */
+      public Builder setMessageIdList(se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList value) {
+        if (messageIdListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          payload_ = value;
+          onChanged();
+        } else {
+          messageIdListBuilder_.setMessage(value);
+        }
+        payloadCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.messenger.MessageIdList messageIdList = 5;</code>
+       */
+      public Builder setMessageIdList(
+          se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.Builder builderForValue) {
+        if (messageIdListBuilder_ == null) {
+          payload_ = builderForValue.build();
+          onChanged();
+        } else {
+          messageIdListBuilder_.setMessage(builderForValue.build());
+        }
+        payloadCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.messenger.MessageIdList messageIdList = 5;</code>
+       */
+      public Builder mergeMessageIdList(se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList value) {
+        if (messageIdListBuilder_ == null) {
+          if (payloadCase_ == 5 &&
+              payload_ != se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.getDefaultInstance()) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.newBuilder((se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList) payload_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            payload_ = value;
+          }
+          onChanged();
+        } else {
+          if (payloadCase_ == 5) {
+            messageIdListBuilder_.mergeFrom(value);
+          }
+          messageIdListBuilder_.setMessage(value);
+        }
+        payloadCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.messenger.MessageIdList messageIdList = 5;</code>
+       */
+      public Builder clearMessageIdList() {
+        if (messageIdListBuilder_ == null) {
+          if (payloadCase_ == 5) {
+            payloadCase_ = 0;
+            payload_ = null;
+            onChanged();
+          }
+        } else {
+          if (payloadCase_ == 5) {
+            payloadCase_ = 0;
+            payload_ = null;
+          }
+          messageIdListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.messenger.MessageIdList messageIdList = 5;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.Builder getMessageIdListBuilder() {
+        return getMessageIdListFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.messenger.MessageIdList messageIdList = 5;</code>
+       */
+      public se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdListOrBuilder getMessageIdListOrBuilder() {
+        if ((payloadCase_ == 5) && (messageIdListBuilder_ != null)) {
+          return messageIdListBuilder_.getMessageOrBuilder();
+        } else {
+          if (payloadCase_ == 5) {
+            return (se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList) payload_;
+          }
+          return se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.messenger.MessageIdList messageIdList = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList, se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdListOrBuilder> 
+          getMessageIdListFieldBuilder() {
+        if (messageIdListBuilder_ == null) {
+          if (!(payloadCase_ == 5)) {
+            payload_ = se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.getDefaultInstance();
+          }
+          messageIdListBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList, se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList.Builder, se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdListOrBuilder>(
+                  (se.umu.cs.ads.a1.grpc.MessengerProto.MessageIdList) payload_,
+                  getParentForChildren(),
+                  isClean());
+          payload_ = null;
+        }
+        payloadCase_ = 5;
+        onChanged();;
+        return messageIdListBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:messenger.Response)
+    }
+
+    // @@protoc_insertion_point(class_scope:messenger.Response)
+    private static final se.umu.cs.ads.a1.grpc.MessengerProto.Response DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new se.umu.cs.ads.a1.grpc.MessengerProto.Response();
+    }
+
+    public static se.umu.cs.ads.a1.grpc.MessengerProto.Response getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Response>
+        PARSER = new com.google.protobuf.AbstractParser<Response>() {
+      @java.lang.Override
+      public Response parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Response(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Response> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Response> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public se.umu.cs.ads.a1.grpc.MessengerProto.Response getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_messenger_Message_descriptor;
   private static final 
@@ -9090,6 +13528,16 @@ public final class MessengerProto {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_messenger_MessageIdList_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_messenger_Request_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_messenger_Request_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_messenger_Response_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_messenger_Response_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -9116,26 +13564,46 @@ public final class MessengerProto {
       "cList\022 \n\006topics\030\001 \003(\0132\020.messenger.Topic\"" +
       "2\n\014UsernameList\022\"\n\005users\030\001 \003(\0132\023.messeng" +
       "er.Username\"2\n\rMessageIdList\022!\n\003ids\030\001 \003(" +
-      "\0132\024.messenger.MessageId2\316\005\n\020MessengerSer" +
-      "vice\0228\n\005Store\022\027.messenger.StoreRequest\032\026" +
-      ".google.protobuf.Empty\022C\n\010Retrieve\022\032.mes" +
-      "senger.RetrieveRequest\032\033.messenger.Retri" +
-      "eveResponse\022:\n\006Delete\022\030.messenger.Delete" +
-      "Request\032\026.google.protobuf.Empty\022A\n\tSubsc" +
-      "ribe\022\036.messenger.SubscriptionRequest\032\024.m" +
-      "essenger.TopicList\022C\n\013Unsubscribe\022\036.mess" +
-      "enger.SubscriptionRequest\032\024.messenger.To" +
-      "picList\022<\n\tListUsers\022\026.google.protobuf.E" +
-      "mpty\032\027.messenger.UsernameList\022:\n\nListTop" +
-      "ics\022\026.google.protobuf.Empty\032\024.messenger." +
-      "TopicList\022;\n\016ListUserTopics\022\023.messenger." +
-      "Username\032\024.messenger.TopicList\022<\n\017ListSu" +
-      "bscribers\022\020.messenger.Topic\032\027.messenger." +
-      "UsernameList\022A\n\020ListUserMessages\022\023.messe" +
-      "nger.Username\032\030.messenger.MessageIdList\022" +
-      "?\n\021ListTopicMessages\022\020.messenger.Topic\032\030" +
-      ".messenger.MessageIdListB\'\n\025se.umu.cs.ad" +
-      "s.a1.grpcB\016MessengerProtob\006proto3"
+      "\0132\024.messenger.MessageId\"\235\004\n\007Request\022(\n\005s" +
+      "tore\030\001 \001(\0132\027.messenger.StoreRequestH\000\022.\n" +
+      "\010retrieve\030\002 \001(\0132\032.messenger.RetrieveRequ" +
+      "estH\000\022*\n\006delete\030\003 \001(\0132\030.messenger.Delete" +
+      "RequestH\000\0223\n\tsubscribe\030\004 \001(\0132\036.messenger" +
+      ".SubscriptionRequestH\000\0225\n\013unsubscribe\030\005 " +
+      "\001(\0132\036.messenger.SubscriptionRequestH\000\022-\n" +
+      "\016listUserTopics\030\006 \001(\0132\023.messenger.Userna" +
+      "meH\000\022+\n\017listSubscribers\030\007 \001(\0132\020.messenge" +
+      "r.TopicH\000\022/\n\020listUserMessages\030\010 \001(\0132\023.me" +
+      "ssenger.UsernameH\000\022-\n\021listTopicMessages\030" +
+      "\t \001(\0132\020.messenger.TopicH\000\022+\n\tlistUsers\030\n" +
+      " \001(\0132\026.google.protobuf.EmptyH\000\022,\n\nlistTo" +
+      "pics\030\013 \001(\0132\026.google.protobuf.EmptyH\000B\t\n\007" +
+      "payload\"\202\002\n\010Response\022\'\n\005empty\030\001 \001(\0132\026.go" +
+      "ogle.protobuf.EmptyH\000\0223\n\014retrieveResp\030\002 " +
+      "\001(\0132\033.messenger.RetrieveResponseH\000\022)\n\tto" +
+      "picList\030\003 \001(\0132\024.messenger.TopicListH\000\022/\n" +
+      "\014usernameList\030\004 \001(\0132\027.messenger.Username" +
+      "ListH\000\0221\n\rmessageIdList\030\005 \001(\0132\030.messenge" +
+      "r.MessageIdListH\000B\t\n\007payload2\316\005\n\020Messeng" +
+      "erService\0228\n\005Store\022\027.messenger.StoreRequ" +
+      "est\032\026.google.protobuf.Empty\022C\n\010Retrieve\022" +
+      "\032.messenger.RetrieveRequest\032\033.messenger." +
+      "RetrieveResponse\022:\n\006Delete\022\030.messenger.D" +
+      "eleteRequest\032\026.google.protobuf.Empty\022A\n\t" +
+      "Subscribe\022\036.messenger.SubscriptionReques" +
+      "t\032\024.messenger.TopicList\022C\n\013Unsubscribe\022\036" +
+      ".messenger.SubscriptionRequest\032\024.messeng" +
+      "er.TopicList\022<\n\tListUsers\022\026.google.proto" +
+      "buf.Empty\032\027.messenger.UsernameList\022:\n\nLi" +
+      "stTopics\022\026.google.protobuf.Empty\032\024.messe" +
+      "nger.TopicList\022;\n\016ListUserTopics\022\023.messe" +
+      "nger.Username\032\024.messenger.TopicList\022<\n\017L" +
+      "istSubscribers\022\020.messenger.Topic\032\027.messe" +
+      "nger.UsernameList\022A\n\020ListUserMessages\022\023." +
+      "messenger.Username\032\030.messenger.MessageId" +
+      "List\022?\n\021ListTopicMessages\022\020.messenger.To" +
+      "pic\032\030.messenger.MessageIdListB\'\n\025se.umu." +
+      "cs.ads.a1.grpcB\016MessengerProtob\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -9222,6 +13690,18 @@ public final class MessengerProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_messenger_MessageIdList_descriptor,
         new java.lang.String[] { "Ids", });
+    internal_static_messenger_Request_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_messenger_Request_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_messenger_Request_descriptor,
+        new java.lang.String[] { "Store", "Retrieve", "Delete", "Subscribe", "Unsubscribe", "ListUserTopics", "ListSubscribers", "ListUserMessages", "ListTopicMessages", "ListUsers", "ListTopics", "Payload", });
+    internal_static_messenger_Response_descriptor =
+      getDescriptor().getMessageTypes().get(13);
+    internal_static_messenger_Response_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_messenger_Response_descriptor,
+        new java.lang.String[] { "Empty", "RetrieveResp", "TopicList", "UsernameList", "MessageIdList", "Payload", });
     com.google.protobuf.EmptyProto.getDescriptor();
   }
 

@@ -12,6 +12,10 @@ import se.umu.cs.ads.a1.server.REST.ObjectMapperFactory;
 import se.umu.cs.ads.a1.types.MessageId;
 import se.umu.cs.ads.a1.types.Username;
 
+/**
+ * REST resource for accessing messages belonging to a specific user.
+ * Returns all message IDs associated with the given username using GET.
+ */
 public class UserMessagesResource extends ServerResource{
     private static final Messenger messenger = BackendLocator.getMessenger();
     private final ObjectMapper mapper = ObjectMapperFactory.get();

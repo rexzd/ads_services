@@ -12,6 +12,11 @@ import se.umu.cs.ads.a1.server.REST.ObjectMapperFactory;
 import se.umu.cs.ads.a1.types.Topic;
 import se.umu.cs.ads.a1.types.Username;
 
+/**
+ * REST resource for listing subscribers of a topic.
+ * Provides functionality to query which users are subscribed
+ * to a given topic.
+ */
 public class SubscribersResource extends ServerResource {
     private static final Messenger messenger = BackendLocator.getMessenger();
     private final ObjectMapper mapper = ObjectMapperFactory.get();

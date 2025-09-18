@@ -16,6 +16,10 @@ import se.umu.cs.ads.a1.server.REST.ObjectMapperFactory;
 import se.umu.cs.ads.a1.types.Username;
 import se.umu.cs.ads.a1.types.Topic;
 
+/**
+ * REST resource for managing user subscriptions.
+ * Allows subscribing to topics and removing existing subscriptions.
+ */
 public class SubscriptionsResource extends ServerResource {
     private static final Messenger messenger = BackendLocator.getMessenger();
     private final ObjectMapper mapper = ObjectMapperFactory.get();

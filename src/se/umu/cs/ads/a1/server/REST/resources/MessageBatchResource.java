@@ -5,7 +5,6 @@ import org.restlet.data.MediaType;
 import org.restlet.representation.Representation;
 import org.restlet.representation.StringRepresentation;
 import org.restlet.resource.Post;
-import org.restlet.resource.Get;
 import org.restlet.resource.Delete;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -20,6 +19,11 @@ import se.umu.cs.ads.a1.types.Topic;
 import se.umu.cs.ads.a1.types.Content;
 import se.umu.cs.ads.a1.types.Data;
 
+/**
+ * REST resource for batch operations on messages.
+ * Supports storing multiple messages via POST and
+ * deleting messages in bulk via DELETE.
+ */
 public class MessageBatchResource extends ServerResource{
     private static final Messenger messenger = BackendLocator.getMessenger();
     private static final ObjectMapper mapper = ObjectMapperFactory.get();

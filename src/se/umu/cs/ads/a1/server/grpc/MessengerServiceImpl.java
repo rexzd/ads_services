@@ -9,6 +9,11 @@ import se.umu.cs.ads.a1.grpc.MessengerServiceGrpc;
 import se.umu.cs.ads.a1.interfaces.Messenger;
 import se.umu.cs.ads.a1.types.*;
 
+/**
+ * gRPC service implementation for the Messenger API.
+ * Translates gRPC requests into backend calls and maps
+ * backend responses into protobuf messages.
+ */
 public class MessengerServiceImpl extends MessengerServiceGrpc.MessengerServiceImplBase {
     private final Messenger backend;
 

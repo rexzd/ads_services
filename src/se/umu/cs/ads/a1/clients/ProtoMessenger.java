@@ -10,6 +10,12 @@ import se.umu.cs.ads.a1.types.*;
 import se.umu.cs.ads.a1.interfaces.Messenger;
 import se.umu.cs.ads.a1.server.grpc.ProtoMapper;
 
+
+/**
+ * Client implementation of the Messenger interface using Protocol Buffers
+ * over raw TCP sockets. Requests and responses are serialized using
+ * MessengerProto and sent directly without an RPC framework.
+ */
 public class ProtoMessenger implements Messenger {
     private final String host;
     private final int port;

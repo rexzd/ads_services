@@ -19,6 +19,10 @@ import se.umu.cs.ads.a1.types.Message;
 import se.umu.cs.ads.a1.types.MessageId;
 import se.umu.cs.ads.a1.types.Timestamp;
 
+/**
+ * REST resource for operations on the message collection.
+ * Provides functionality to list available messages in the system.
+ */
 public class MessageCollectionResource extends ServerResource {
     private static final Messenger messenger = BackendLocator.getMessenger();
     private final ObjectMapper mapper = ObjectMapperFactory.get();

@@ -20,6 +20,11 @@ import se.umu.cs.ads.a1.types.Timestamp;
 import se.umu.cs.ads.a1.types.Topic;
 import se.umu.cs.ads.a1.types.Username;
 
+/**
+ * Factory for a preconfigured Jackson ObjectMapper.
+ * Registers custom serializers and deserializers for all types
+ * to support JSON conversion in REST resources.
+ */
 public final class ObjectMapperFactory {
     private static final ObjectMapper mapper = new ObjectMapper();
 

@@ -13,6 +13,11 @@ import se.umu.cs.ads.a1.server.REST.ObjectMapperFactory;
 import se.umu.cs.ads.a1.types.MessageId;
 import se.umu.cs.ads.a1.types.Message;
 
+/**
+ * REST resource for single message operations.
+ * Allows retrieving a message by ID with GET and
+ * deleting a message by ID with DELETE.
+ */
 public class MessageResource extends ServerResource{
     private static final Messenger messenger = BackendLocator.getMessenger();
     private final ObjectMapper mapper = ObjectMapperFactory.get();

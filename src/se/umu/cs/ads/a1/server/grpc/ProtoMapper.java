@@ -6,6 +6,11 @@ import com.google.protobuf.ByteString;
 import se.umu.cs.ads.a1.types.*;
 import se.umu.cs.ads.a1.grpc.MessengerProto;
 
+/**
+ * Utility class for mapping between domain types and protobuf types.
+ * Provides conversions in both directions to support communication
+ * between the backend Messenger and gRPC/Protocol Buffers services.
+ */
 public final class ProtoMapper {
     private ProtoMapper () {}
 

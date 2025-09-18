@@ -12,7 +12,10 @@ import se.umu.cs.ads.a1.server.REST.ObjectMapperFactory;
 import se.umu.cs.ads.a1.types.Username;
 import se.umu.cs.ads.a1.types.Topic;
 
-
+/**
+ * REST resource for accessing topics subscribed to by a specific user.
+ * Retrieves all topics for the given username using GET.
+ */
 public class TopicResource extends ServerResource {
     private static final Messenger messenger = BackendLocator.getMessenger();
     private final ObjectMapper mapper = ObjectMapperFactory.get();

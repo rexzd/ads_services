@@ -16,6 +16,11 @@ import se.umu.cs.ads.a1.types.MessageId;
 import se.umu.cs.ads.a1.types.Topic;
 import se.umu.cs.ads.a1.types.Username;
 
+/**
+ * Client implementation of the Messenger interface using a REST service.
+ * Communicates with the server through HTTP resource endpoints and
+ * serializes messages as JSON.
+ */
 public class RESTMessenger implements Messenger {
     private final String baseUrl;
     private final HttpClient client;

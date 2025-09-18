@@ -8,6 +8,11 @@ import se.umu.cs.ads.a1.grpc.MessengerProto;
 import se.umu.cs.ads.a1.server.REST.BackendLocator;
 import se.umu.cs.ads.a1.server.grpc.ProtoMapper;
 
+/**
+ * Standalone Protocol Buffers server.
+ * Accepts socket connections, handles protobuf-encoded requests
+ * and provides all operations to the backend Messenger.
+ */
 public class ProtoServer {
     public static void main(String[] args) throws Exception {
         int port = (args.length > 0) ? Integer.parseInt(args[0]) : 10000;

@@ -16,6 +16,11 @@ import se.umu.cs.ads.a1.server.REST.resources.MessageResource;
 import se.umu.cs.ads.a1.server.REST.resources.SubscribersResource;
 import se.umu.cs.ads.a1.server.REST.resources.MessageBatchRetrieveResource;
 
+/**
+ * REST application entry point.
+ * Configures and exposes all REST resources by mapping
+ * request paths to their corresponding resource classes.
+ */
 public class RESTApp extends Application {
     @Override
     public Restlet createInboundRoot() {

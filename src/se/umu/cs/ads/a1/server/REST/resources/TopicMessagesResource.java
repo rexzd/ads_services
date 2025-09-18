@@ -15,6 +15,10 @@ import se.umu.cs.ads.a1.server.REST.ObjectMapperFactory;
 import se.umu.cs.ads.a1.types.MessageId;
 import se.umu.cs.ads.a1.types.Topic;
 
+/**
+ * REST resource for accessing messages under a specific topic.
+ * Supports listing all messages for the topic provided.
+ */
 public class TopicMessagesResource extends ServerResource {
     private static final Messenger messenger = BackendLocator.getMessenger();
     private final ObjectMapper mapper = ObjectMapperFactory.get();

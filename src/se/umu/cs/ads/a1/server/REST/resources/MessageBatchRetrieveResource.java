@@ -15,6 +15,11 @@ import se.umu.cs.ads.a1.server.REST.ObjectMapperFactory;
 import se.umu.cs.ads.a1.types.Message;
 import se.umu.cs.ads.a1.types.MessageId;
 
+/**
+ * REST resource for retrieving multiple messages in one request.
+ * Accepts a list of message IDs in the request body and returns
+ * the corresponding messages.
+ */
 public class MessageBatchRetrieveResource extends ServerResource {
     private static final Messenger messenger = BackendLocator.getMessenger();
     private static final ObjectMapper mapper = ObjectMapperFactory.get();

@@ -8,6 +8,11 @@ import se.umu.cs.ads.a1.interfaces.Messenger;
 import se.umu.cs.ads.a1.server.grpc.ProtoMapper;
 import se.umu.cs.ads.a1.types.*;
 
+/**
+ * Client implementation of the Messenger interface using gRPC.
+ * Relies on the generated stubs from Messenger.proto, where all
+ * requests and responses are serialized with Protocol Buffers.
+ */
 public class GrpcMessenger implements Messenger {
     private final ManagedChannel channel;
     private final MessengerServiceGrpc.MessengerServiceBlockingStub stub;

@@ -81,12 +81,13 @@
     </delete>
   </target>
 
-  <target name="run-rest" depends="compile">
+  <target name="run-rest-server" depends="compile">
     <java classname="se.umu.cs.ads.a1.server.REST.RESTServer" fork="true" failonerror="true">
       <classpath>
         <pathelement path="${build}"/>
         <fileset dir="${lib}" includes="**/*.jar"/>
       </classpath>
+      <jvmarg value="-Djava.util.logging.config.file=logging.properties"/>
       <arg value="8000"/>
     </java>
   </target>
@@ -115,10 +116,11 @@
             <jvmarg value="-Xmx2G"/>
             <arg value="se.umu.cs.ads.a1.clients.RESTMessenger"/>
             <arg value="-perf"/>
+            <redirector output="rest_perf.csv"/>
         </java>
     </target>
 
-    <target name="run-grpc" depends="compile">
+    <target name="run-grpc-server" depends="compile">
         <java classname="se.umu.cs.ads.a1.server.grpc.GrpcServer" fork="true" failonerror="true">
             <classpath>
                 <pathelement path="${build}"/>
@@ -149,10 +151,11 @@
             <jvmarg value="-XX:+UseG1GC"/>
             <arg value="se.umu.cs.ads.a1.clients.GrpcMessenger"/>
             <arg value="-perf"/>
+            <redirector output="grpc_perf.csv"/>
         </java>
     </target>
 
-    <target name="run-proto" depends="compile">
+    <target name="run-proto-server" depends="compile">
         <java classname="se.umu.cs.ads.a1.server.protobuffers.ProtoServer" fork="true" failonerror="true">
             <classpath>
                 <pathelement path="${build}"/>
@@ -182,6 +185,7 @@
             <jvmarg value="-Xmx2g"/>
             <arg value="se.umu.cs.ads.a1.clients.ProtoMessenger"/>
             <arg value="-perf"/>
+            <redirector output="proto_perf.csv"/>
         </java>
     </target>
 

@@ -45,11 +45,16 @@ public class Main
       if (Util.containsFlag(args,"-perf"))
       {
         PerformanceTest test = new PerformanceTest(messenger);
+        test.testMessageRetrieval(username, 100, 128);
 
-        System.out.println("testing retrieval performance...");
-        test.testMessageRetrieval(username,1000,1024);
-        test.testMessageRetrieval(username,100000,1024);
-        test.testMessageRetrieval(username,10000000,1024);
+        int[] messageCounts = {100, 1000, 10000, 100000};
+        int[] payloadSizes = {64, 128, 256, 512, 1024};
+
+        for (int nr : messageCounts) {
+            for (int size : payloadSizes) {
+                test.testMessageRetrieval(username, nr, size);
+            }
+        }
       }
     }
     catch (Exception e)

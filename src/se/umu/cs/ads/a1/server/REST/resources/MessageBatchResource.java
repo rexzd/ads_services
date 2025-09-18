@@ -42,19 +42,6 @@ public class MessageBatchResource extends ServerResource{
         return new StringRepresentation(json, MediaType.APPLICATION_JSON);
     }
 
-    @Get("json")
-    public StringRepresentation retrieveMessages(Representation entity) throws Exception {
-        String body = entity.getText();
-        JsonNode node = mapper.readTree(body);
-        MessageId[] messageIds = new MessageId[node.get("ids").size()];
-        for (int i = 0; i < messageIds.length; i++) {
-            messageIds[i] = new MessageId(node.get("ids").get(i).asText());
-        }
-        Message[] messages = messenger.retrieve(messageIds);
-        String json = mapper.writeValueAsString(messages);
-        return new StringRepresentation(json);
-    }
-
     @Delete
     public void deleteMessage(Representation entity) throws Exception{
         String body = entity.getText();

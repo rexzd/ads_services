@@ -1,1 +1,11 @@
 build/
+/src/generated/
+*_perf.csv
+/plots/
+*.png
+*.log
+*.swp
+*.swo
+*.iml
+.idea/
+.vscode/

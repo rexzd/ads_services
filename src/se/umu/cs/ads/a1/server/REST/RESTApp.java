@@ -14,6 +14,7 @@ import se.umu.cs.ads.a1.server.REST.resources.MessageBatchResource;
 import se.umu.cs.ads.a1.server.REST.resources.MessageCollectionResource;
 import se.umu.cs.ads.a1.server.REST.resources.MessageResource;
 import se.umu.cs.ads.a1.server.REST.resources.SubscribersResource;
+import se.umu.cs.ads.a1.server.REST.resources.MessageBatchRetrieveResource;
 
 public class RESTApp extends Application {
     @Override
@@ -26,6 +27,7 @@ public class RESTApp extends Application {
         router.attach("/topics", TopicsResource.class);
         router.attach("/users", UsersResource.class);
         router.attach("/subscriptions", SubscriptionsResource.class);
+        router.attach("/messages/batch/retrieve", MessageBatchRetrieveResource.class);
         router.attach("/messages/batch", MessageBatchResource.class);
         router.attach("/messages", MessageCollectionResource.class);
         router.attach("/messages/{id}", MessageResource.class);

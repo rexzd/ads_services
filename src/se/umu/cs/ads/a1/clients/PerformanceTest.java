@@ -41,13 +41,13 @@ public class PerformanceTest
 	    messenger.retrieve(message);
     long t2 = System.currentTimeMillis();
 
-    System.out.println("retrieved " + messageIds.length + " messages in " + (t2 - t1) + " ms (sequential)");
+    System.out.println(messageIds.length + "," + payloadSize + "," + "sequential," + (t2 - t1));
 
     long t3 = System.currentTimeMillis();
     messenger.retrieve(messageIds);
     long t4 = System.currentTimeMillis();
 
-    System.out.println("retrieved " + messageIds.length + " messages in " + (t4 - t3) + " ms (batch)");
+    System.out.println(messageIds.length + "," + payloadSize + "," + "batch," + (t4 - t3));
 
     messenger.delete(messenger.listMessages(topic));
     if (messenger.listMessages(topic).length != 0)
